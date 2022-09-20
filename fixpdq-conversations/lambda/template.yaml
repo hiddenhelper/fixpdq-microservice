@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+
+
+Globals:
+  Function:
+    Timeout: 3
+    Environment:
+      Variables:
+        ENVIRONMENT: "dev"
+        CONVERSATIONS_LOGGING_LEVEL: "debug"
+        CONVERSATIONS_LOGGING_DRIVER: "console"
+        COGNITO_USERPOOL_ID: "ap-southeast-2_YmaroG5KO"
+        TWILIO_ACCOUNT_SID: "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        TWILIO_AUTH_TOKEN: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        TWILIO_API_KEY: "SKXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        TWILIO_API_SECRET: "QmXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        TWILIO_SERVICE_SID: "ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        CONVERSATIONS_DB_DYNAMODB: "conversations"
+        ENABLE_HIVEMIND: false
+Resources:
+  ConversationServiceFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: conversations-service-lda
+      CodeUri: conversations-service/
+      Handler: app.handler
+      Runtime: nodejs12.x
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get

@@ -1,0 +1,19 @@
+{
+  "action": "processAccContractNotifications",
+  "payload": {
+      "notifications": [
+        {
+          "actionid": "1dd5be5a-5c48-4f12-9f62-d0df661ed7cc",
+          "dateCreated": 1627175676000,
+          "actionType": "assign",
+          "conversationId": "1aab2f60-40b9-4c93-bb09-67469aec1ca6",
+          "messageFromRule": "Please answer the questions to accept accountability contract.",
+          "hivemind": {
+              "allowHivemindProcessing": true,
+              "eventName": "workitem-accept-event"
+          },
+          "workitemId": "2db1478c-3555-429b-8e27-d3146edca9b5"
+      }
+      ]
+  }
+}

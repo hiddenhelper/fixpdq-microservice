@@ -1,0 +1,52 @@
+{
+  "responseId": "27cf0a66-ae77-4365-8832-edcacbb65527-5bc413ca",
+  "queryResult": {
+    "queryText": "yes",
+    "action": "workitem-accept.workitem-accept-yes.workitem-accept-yes-yes",
+    "parameters": {},
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Wicked",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "Wicked"
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/fixpdq-hivemind/agent/sessions/f24f5558-7add-f54b-2a7d-15b10a551cc2/contexts/workitem-accept-yes-followup",
+        "lifespanCount": 1
+      },
+      {
+        "name": "projects/fixpdq-hivemind/agent/sessions/f24f5558-7add-f54b-2a7d-15b10a551cc2/contexts/workitem-accept-followup"
+      },
+      {
+        "name": "projects/fixpdq-hivemind/agent/sessions/f24f5558-7add-f54b-2a7d-15b10a551cc2/contexts/__system_counters__",
+        "parameters": {
+          "no-input": 0,
+          "no-match": 0
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/fixpdq-hivemind/agent/intents/95660b8e-91d7-4f9b-afb2-95ed99ed32dd",
+      "displayName": "workitem-accept-time - yes"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "en",
+    "sentimentAnalysisResult": {
+      "queryTextSentiment": {
+        "score": 0.6,
+        "magnitude": 0.6
+      }
+    }
+  },
+  "originalDetectIntentRequest": {
+    "source": "DIALOGFLOW_CONSOLE",
+    "payload": {}
+  },
+  "session": "projects/fixpdq-hivemind/agent/sessions/f24f5558-7add-f54b-2a7d-15b10a551cc2"
+}

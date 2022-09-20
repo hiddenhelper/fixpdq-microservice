@@ -1,0 +1,117 @@
+{
+  "resource": "/conversations",
+  "path": "/conversations",
+  "httpMethod": "POST",
+  "headers": {
+      "accept": "application/json",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-GB,en;q=0.5",
+      "Authorization": "Bearer eyJraWQiOiJ0WHV5Tld2WGFyQTk4OUhZSkh0QmljUmVwaTZnZVRGaDhcL1VSV0x3dGdyRT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5MDEyYWE3Mi1mYzBlLTRlM2QtYWFjYi0wYTA1NTE1NjIzNjkiLCJjb2duaXRvOmdyb3VwcyI6WyJmMjJkODYwMS1hZDRjLTQ3NmQtOTU0My0yNzljNGEyMTJmNTQuYWRtaW4iLCI4ZWZlMTFhMC0wZjUzLTQwODgtOTU1My0xNDJiNTAyY2U0MzAuYWRtaW4iLCIwYTUxMjk1Ni1iZmQ2LTRiZWYtYWM2Mi03MTc0YjViNWUzZGQubWVtYmVyIiwiMGQ4NmI4OGEtOTA4NS00ZTZkLThlMmEtMzdmMTMyNTk3ZTg5LmFkbWluIiwiYzhmZjU3YzktNjNhYi00MWVhLTkwMzYtNDJlOGZlZmM4Yjc2Lm1lbWJlciIsIjE3NDQ4ZDQyLTQ4MGUtNDZlMS04MGNkLTUxZGI1ZmUwYjgyZS5tZW1iZXIiLCI2MGE0MGM1Ny01M2QzLTQzZmQtYjliYS05ZjQ4N2ZiYmQxMmMubWVtYmVyIiwiOTQ2YTU5M2MtODBlYi00NWFiLTliMTYtNzAxOGI1MzdiNDQyLm1lbWJlciIsIjQwNTczMzU5LTMwYjgtNDFlYi05NzA2LWEwMWQzYzNlNWQ0Yy5hZG1pbiIsImU0YTgyYTNiLTQ5ZDYtNGM5My05OTBlLWU2YTM0YjU5ZDBkMC5tZW1iZXIiLCJmNGZmM2RkMy03MTQyLTRhOWMtYTRmNy1kNWNkODliMzA0OTkuYWRtaW4iLCIxMjQ1MTJkYS0zYWJkLTRjZGQtODBkMC01OTUzNTEwODMwZWYubWVtYmVyIiwiNGZmY2YxMGMtZGQxNi00ZGIzLThmMDAtZThiYzk1YTA3MzA3Lm1lbWJlciIsImRhMGEwY2YxLTFjOTEtNDkyNi1hYzIyLTgwZDg4ZTgwYmMxYy5hZG1pbiIsIjlhZDQyNWVhLWZhOWItNDA2My04ODdiLTIxMjM5ZjYyZjI4MS5tZW1iZXIiLCIyZTc5ZjQ2YS05ZDkzLTQ5NjEtOTk4ZC05N2MyOTEyNjMyYjAuYWRtaW4iLCI5MmY2NDkzMS05MTE5LTQwNGYtOGVlNS0wY2VjOGJmZGY2Y2MubWVtYmVyIl0sImV2ZW50X2lkIjoiM2QxZTBkMWYtMzMzOC00NWRlLTgyZDMtMTY4MDM4ODViZjJiIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTYyNDMxNzc0OCwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoZWFzdC0yLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoZWFzdC0yX0J0Y09qWktiYiIsImV4cCI6MTYyNDMzMjE5NywiaWF0IjoxNjI0MzI4NTk3LCJqdGkiOiJhNjExMmQwZC0xZTlmLTRlNzUtYjBmZS03MzlhMWFkMWU0NGMiLCJjbGllbnRfaWQiOiI3NmRjaW1xMGxjZm5xZ3VoNmNhMjZ1cWV1biIsInVzZXJuYW1lIjoiNmYyNDZhYWItY2I0NC00NWYxLTkzZjUtMWYxMTQzOGViYzRkIn0.S44Af4_3ufUKcaVyHYGM6jU0HBbcrQQ_s3kaqFLI9VK_UXOFB1jGlG6ipcFHnCdM48iPfi4CntmejG1fhv9w3fijsIoXLfilre09BNETSUbLHvhqnJWPjDlaQVwqJ_JiPhp3ONVbqzq3HCP1mOd0LEYQ-UCic_ic1BxkzX2N5Zhhf07bGbHzVo5z1WCxxPqG92aZjso9WfBD45V3f7pE0Gm2CWpgN0gEW8ZyYoMM5qNAQ4Cx977tgsiOBUY0jJ_8qOQWs4ww_4yJCPW4IO1ZaKH4aHuVzW8nBBuDkpV-pjjIlk4bCN0ere9xPitOMGNX9_QcWw4yY4fX4oJ-Jq7y_g",
+      "content-type": "application/json; charset=UTF-8",
+      "dnt": "1",
+      "Host": "api.prod.fixpdq.app",
+      "origin": "https://www.fixpdq.app",
+      "referer": "https://www.fixpdq.app/",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0",
+      "X-Amzn-Trace-Id": "Root=1-60d14dd1-3e92a70c23c6407f7394a332",
+      "X-Forwarded-For": "151.210.140.75",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+      "accept": [
+          "application/json"
+      ],
+      "accept-encoding": [
+          "gzip, deflate, br"
+      ],
+      "accept-language": [
+          "en-GB,en;q=0.5"
+      ],
+      "Authorization": [
+          "Bearer eyJraWQiOiJ0WHV5Tld2WGFyQTk4OUhZSkh0QmljUmVwaTZnZVRGaDhcL1VSV0x3dGdyRT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5MDEyYWE3Mi1mYzBlLTRlM2QtYWFjYi0wYTA1NTE1NjIzNjkiLCJjb2duaXRvOmdyb3VwcyI6WyJmMjJkODYwMS1hZDRjLTQ3NmQtOTU0My0yNzljNGEyMTJmNTQuYWRtaW4iLCI4ZWZlMTFhMC0wZjUzLTQwODgtOTU1My0xNDJiNTAyY2U0MzAuYWRtaW4iLCIwYTUxMjk1Ni1iZmQ2LTRiZWYtYWM2Mi03MTc0YjViNWUzZGQubWVtYmVyIiwiMGQ4NmI4OGEtOTA4NS00ZTZkLThlMmEtMzdmMTMyNTk3ZTg5LmFkbWluIiwiYzhmZjU3YzktNjNhYi00MWVhLTkwMzYtNDJlOGZlZmM4Yjc2Lm1lbWJlciIsIjE3NDQ4ZDQyLTQ4MGUtNDZlMS04MGNkLTUxZGI1ZmUwYjgyZS5tZW1iZXIiLCI2MGE0MGM1Ny01M2QzLTQzZmQtYjliYS05ZjQ4N2ZiYmQxMmMubWVtYmVyIiwiOTQ2YTU5M2MtODBlYi00NWFiLTliMTYtNzAxOGI1MzdiNDQyLm1lbWJlciIsIjQwNTczMzU5LTMwYjgtNDFlYi05NzA2LWEwMWQzYzNlNWQ0Yy5hZG1pbiIsImU0YTgyYTNiLTQ5ZDYtNGM5My05OTBlLWU2YTM0YjU5ZDBkMC5tZW1iZXIiLCJmNGZmM2RkMy03MTQyLTRhOWMtYTRmNy1kNWNkODliMzA0OTkuYWRtaW4iLCIxMjQ1MTJkYS0zYWJkLTRjZGQtODBkMC01OTUzNTEwODMwZWYubWVtYmVyIiwiNGZmY2YxMGMtZGQxNi00ZGIzLThmMDAtZThiYzk1YTA3MzA3Lm1lbWJlciIsImRhMGEwY2YxLTFjOTEtNDkyNi1hYzIyLTgwZDg4ZTgwYmMxYy5hZG1pbiIsIjlhZDQyNWVhLWZhOWItNDA2My04ODdiLTIxMjM5ZjYyZjI4MS5tZW1iZXIiLCIyZTc5ZjQ2YS05ZDkzLTQ5NjEtOTk4ZC05N2MyOTEyNjMyYjAuYWRtaW4iLCI5MmY2NDkzMS05MTE5LTQwNGYtOGVlNS0wY2VjOGJmZGY2Y2MubWVtYmVyIl0sImV2ZW50X2lkIjoiM2QxZTBkMWYtMzMzOC00NWRlLTgyZDMtMTY4MDM4ODViZjJiIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTYyNDMxNzc0OCwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoZWFzdC0yLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoZWFzdC0yX0J0Y09qWktiYiIsImV4cCI6MTYyNDMzMjE5NywiaWF0IjoxNjI0MzI4NTk3LCJqdGkiOiJhNjExMmQwZC0xZTlmLTRlNzUtYjBmZS03MzlhMWFkMWU0NGMiLCJjbGllbnRfaWQiOiI3NmRjaW1xMGxjZm5xZ3VoNmNhMjZ1cWV1biIsInVzZXJuYW1lIjoiNmYyNDZhYWItY2I0NC00NWYxLTkzZjUtMWYxMTQzOGViYzRkIn0.S44Af4_3ufUKcaVyHYGM6jU0HBbcrQQ_s3kaqFLI9VK_UXOFB1jGlG6ipcFHnCdM48iPfi4CntmejG1fhv9w3fijsIoXLfilre09BNETSUbLHvhqnJWPjDlaQVwqJ_JiPhp3ONVbqzq3HCP1mOd0LEYQ-UCic_ic1BxkzX2N5Zhhf07bGbHzVo5z1WCxxPqG92aZjso9WfBD45V3f7pE0Gm2CWpgN0gEW8ZyYoMM5qNAQ4Cx977tgsiOBUY0jJ_8qOQWs4ww_4yJCPW4IO1ZaKH4aHuVzW8nBBuDkpV-pjjIlk4bCN0ere9xPitOMGNX9_QcWw4yY4fX4oJ-Jq7y_g"
+      ],
+      "content-type": [
+          "application/json; charset=UTF-8"
+      ],
+      "dnt": [
+          "1"
+      ],
+      "Host": [
+          "api.prod.fixpdq.app"
+      ],
+      "origin": [
+          "https://www.fixpdq.app"
+      ],
+      "referer": [
+          "https://www.fixpdq.app/"
+      ],
+      "User-Agent": [
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0"
+      ],
+      "X-Amzn-Trace-Id": [
+          "Root=1-60d14dd1-3e92a70c23c6407f7394a332"
+      ],
+      "X-Forwarded-For": [
+          "151.210.140.75"
+      ],
+      "X-Forwarded-Port": [
+          "443"
+      ],
+      "X-Forwarded-Proto": [
+          "https"
+      ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+      "resourceId": "prgoei",
+      "authorizer": {
+          "claims": {
+              "sub": "9012aa72-fc0e-4e3d-aacb-0a0551562369",
+              "cognito:groups": "f22d8601-ad4c-476d-9543-279c4a212f54.admin,8efe11a0-0f53-4088-9553-142b502ce430.admin,0a512956-bfd6-4bef-ac62-7174b5b5e3dd.member,0d86b88a-9085-4e6d-8e2a-37f132597e89.admin,c8ff57c9-63ab-41ea-9036-42e8fefc8b76.member,17448d42-480e-46e1-80cd-51db5fe0b82e.member,60a40c57-53d3-43fd-b9ba-9f487fbbd12c.member,946a593c-80eb-45ab-9b16-7018b537b442.member,40573359-30b8-41eb-9706-a01d3c3e5d4c.admin,e4a82a3b-49d6-4c93-990e-e6a34b59d0d0.member,f4ff3dd3-7142-4a9c-a4f7-d5cd89b30499.admin,124512da-3abd-4cdd-80d0-5953510830ef.member,4ffcf10c-dd16-4db3-8f00-e8bc95a07307.member,da0a0cf1-1c91-4926-ac22-80d88e80bc1c.admin,9ad425ea-fa9b-4063-887b-21239f62f281.member,2e79f46a-9d93-4961-998d-97c2912632b0.admin,92f64931-9119-404f-8ee5-0cec8bfdf6cc.member",
+              "event_id": "3d1e0d1f-3338-45de-82d3-16803885bf2b",
+              "token_use": "access",
+              "scope": "aws.cognito.signin.user.admin",
+              "auth_time": "1624317748",
+              "iss": "https://cognito-idp.ap-southeast-2.amazonaws.com/ap-southeast-2_BtcOjZKbb",
+              "exp": "Tue Jun 22 03:23:17 UTC 2021",
+              "iat": "Tue Jun 22 02:23:17 UTC 2021",
+              "jti": "a6112d0d-1e9f-4e75-b0fe-739a1ad1e44c",
+              "client_id": "76dcimq0lcfnqguh6ca26uqeun",
+              "username": "6f246aab-cb44-45f1-93f5-1f11438ebc4d"
+          }
+      },
+      "resourcePath": "/conversations",
+      "httpMethod": "POST",
+      "extendedRequestId": "BTkYwEuKSwMFlFQ=",
+      "requestTime": "22/Jun/2021:02:41:21 +0000",
+      "path": "/conversations",
+      "accountId": "934548467920",
+      "protocol": "HTTP/1.1",
+      "stage": "prod",
+      "domainPrefix": "api",
+      "requestTimeEpoch": 1624329681492,
+      "requestId": "48821777-4221-4d32-a5dc-b163114c4f24",
+      "identity": {
+          "cognitoIdentityPoolId": null,
+          "accountId": null,
+          "cognitoIdentityId": null,
+          "caller": null,
+          "sourceIp": "151.210.140.75",
+          "principalOrgId": null,
+          "accessKey": null,
+          "cognitoAuthenticationType": null,
+          "cognitoAuthenticationProvider": null,
+          "userArn": null,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0",
+          "user": null
+      },
+      "domainName": "api.prod.fixpdq.app",
+      "apiId": "4mnpmxwhyd"
+  },
+  "body": "{\"actionName\":\"\",\"topicName\":\"General #1\",\"workItem\":\"91f86bdc-ccd1-4b05-952e-a70878a132ad\",\"participants\":[{\"Username\":\"5ecce4aa-6c7a-417c-9e61-5a5755d5cbb5\"},{\"Username\":\"8fcabb16-bf8d-45ef-b818-9ab06883f4b4\"},{\"Username\":\"791b29a7-b0b5-4f4a-a269-7ba18b384de5\"},{\"Username\":\"f3c00ea5-b6a0-49b7-8bcf-bc3405af40f4\"},{\"Username\":\"6f246aab-cb44-45f1-93f5-1f11438ebc4d\"}],\"message\":\"hi there\",\"msgRecipient\":\"\"}",
+  "isBase64Encoded": false
+}

@@ -1,0 +1,54 @@
+{
+	"id": "0ce067b6-f948-48cd-b5c0-4481cda1a4f2",
+	"name": "Test",
+	"values": [
+		{
+			"key": "baseUrl",
+			"value": "https://api.test.fixpdq.app",
+			"enabled": true
+		},
+		{
+			"key": "apiKey",
+			"value": "MyApiKeyThatIsAtLeast20Characters",
+			"enabled": true
+		},
+		{
+			"key": "postmanCognitoLoginUrl",
+			"value": "https://auth.webapp.test.fixpdq.app/login",
+			"enabled": true
+		},
+		{
+			"key": "postmanCognitoTokenUrl",
+			"value": "https://auth.webapp.test.fixpdq.app/token",
+			"enabled": true
+		},
+		{
+			"key": "cognitoClientId",
+			"value": "ct2goj70n7n3lfq93423gh7fq",
+			"enabled": true
+		},
+		{
+			"key": "scope",
+			"value": "aws.cognito.signin.user.admin",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "eyJraWQiOiJDOHhWT0lNYmJ1ZWlMdFplalpBaVVsOG1CVytXZng2XC8rYXUyRk0xb2hOYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJlYTI2M2ZhNS00NjkwLTRkMTctYTNjOS0xZDk4MDUzNGYyYzciLCJldmVudF9pZCI6ImFlOGMyOTNmLTdjMGEtNGRkOC1iN2M5LTg5NzQ1YTdhMTZiZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MDEzMzg0MjgsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMi5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMl9MN3RxQnhVVDciLCJleHAiOjE2MDEzNDU2MjksImlhdCI6MTYwMTM0MjAyOSwianRpIjoiNWZlMDFmODAtNzgwOC00MWVmLWE0ZjEtOGM4MzUyM2ExZWUwIiwiY2xpZW50X2lkIjoiY3QyZ29qNzBuN24zbGZxOTM0MjNnaDdmcSIsInVzZXJuYW1lIjoiYjA3MGFhZTUtY2ZjNC00M2Q4LWI5N2QtNGZlNTE5MWJmNTBkIn0.dKm9qIxw3rKVla6NpP7eDn2pURrGg5DeJC6HbBtCXEJe5_21uwZGtjNDuIjaLlXfNLr8bQ6UG0ukJvG1MatGSd_hbxpiGCbverhkfhC8613hy6cjyTpFnm_G8rQav6q3H4wHYfNzqg-XaImALcxchY-DHTunRRrjXcnM69Jn7csIF_VUk_kIuWMfqYimA7_K0Sfn40KrWM0fQiOD_yqbYCvpI3SkCtT3AOS5TBSla_6tkMZ8o2EpDYd0jYaa5UJXbb9oCP3IY2lf7Kk6ZNZOC1SwMqNPfw8-TJVIJ2s6G-v1hlgspXSAK_wLmvr1BQCagIGr_PGcComIQIVXcWit_w",
+			"enabled": true
+		},
+		{
+			"key": "count_initial",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "max",
+			"value": "",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2020-09-30T02:40:46.631Z",
+	"_postman_exported_using": "Postman/7.33.2-prod200929-0640"
+}

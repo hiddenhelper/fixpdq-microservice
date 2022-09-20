@@ -1,0 +1,11 @@
+; begin auth token
+//pkgs.dev.azure.com/fixPDQ/fixPDQ/_packaging/fixPDQ.Packages/npm/registry/:username=fixPDQ
+//pkgs.dev.azure.com/fixPDQ/fixPDQ/_packaging/fixPDQ.Packages/npm/registry/:_password=cmd4bWVrc2d3NjNpb3RxeGplb3FuNGN2cGtmcnVjZXF3cWR0eHE2cGlqaWZmZHQ0aGVpcQ==
+//pkgs.dev.azure.com/fixPDQ/fixPDQ/_packaging/fixPDQ.Packages/npm/registry/:email=npm requires email to be set but doesn't use the value
+//pkgs.dev.azure.com/fixPDQ/fixPDQ/_packaging/fixPDQ.Packages/npm/:username=fixPDQ
+//pkgs.dev.azure.com/fixPDQ/fixPDQ/_packaging/fixPDQ.Packages/npm/:_password=cmd4bWVrc2d3NjNpb3RxeGplb3FuNGN2cGtmcnVjZXF3cWR0eHE2cGlqaWZmZHQ0aGVpcQ==
+//pkgs.dev.azure.com/fixPDQ/fixPDQ/_packaging/fixPDQ.Packages/npm/:email=npm requires email to be set but doesn't use the value
+; end auth token
+
+@fortawesome:registry=https://npm.fontawesome.com/
+//npm.fontawesome.com/:_authToken=D5B77C9D-8C37-48D6-98B4-399F0D4422AA

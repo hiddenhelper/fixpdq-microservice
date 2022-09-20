@@ -1,0 +1,102 @@
+{
+  "resource": "/actions/workitems",
+  "path": "/actions/workitems",
+  "httpMethod": "POST",
+  "headers": {
+    "accept": "application/json",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,ru;q=0.7",
+    "Authorization": "Bearer eyJraWQiOiJGa0VOYVVsaFwvdHA3T0lcL2xxZ1BFT0kwQnY2S1NtK2tzcWRFXC9hQXZsMlJJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxODYyYWU2Mi1kMjQwLTQwNjAtODFjYi1hY2NhMTBmOGFhZGUiLCJldmVudF9pZCI6IjhhOGZhODlhLWE4ODktNGI2Ni05OTE2LTlmODkzMzBlODE2MCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MTIzNTAyMjMsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMi5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMl9ZbWFyb0c1S08iLCJleHAiOjE2MTI0MjQwMjQsImlhdCI6MTYxMjQyMDQyNCwianRpIjoiYzg2NTYzNDMtNTg2Ny00MTMzLWE1OGEtYjljNDYwNjQwM2Q5IiwiY2xpZW50X2lkIjoiMXBiYmE2MGhwNWRkZzZvbmR1cW5taWN2ZWQiLCJ1c2VybmFtZSI6IjA1NGZkNWI3LTRkMWEtNDYxNS1hZmU0LWFjZjVmMWNjN2U5OCJ9.DYAlvhA8-5ey7UHyowZOMAQdMuht3tF_g_MEX4gdWzuH8sVGphLpw500T_19OLxcT5kJ6pcnPp0uiFkh5kB68BdrJpF_Fu7m2fuvog-WjQYltg13w7epkpmMkMsSbKTG5XMXeiznmqLFHDUD-efdtlqvVMe6PrzpQkjcMwi8v9KK52sFtBa7AoV03ngFzjaq1yUgAQ7r7WEUHSOpYol2tgBbSaBAPmEHqemcRDaaGqf6zgxfkwpVl171q72wxqml2F9f-iB7B0jiySKLE6H1JCr6gzO21_adLpuGM5SJRBXWZzoTms4m1rN3WB4kx0XXri_r4xyqyBRa_s1tx_y5xg",
+    "Host": "api.dev.fixpdq.app",
+    "origin": "http://localhost:3000",
+    "referer": "http://localhost:3000/",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36",
+    "X-Amzn-Trace-Id": "Root=1-601b96be-6067ca7a4b81f84240a06027",
+    "X-Forwarded-For": "175.45.57.230",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "accept": ["application/json"],
+    "accept-encoding": ["gzip, deflate, br"],
+    "accept-language": ["en-GB,en-US;q=0.9,en;q=0.8,ru;q=0.7"],
+    "Authorization": [
+      "Bearer eyJraWQiOiJGa0VOYVVsaFwvdHA3T0lcL2xxZ1BFT0kwQnY2S1NtK2tzcWRFXC9hQXZsMlJJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxODYyYWU2Mi1kMjQwLTQwNjAtODFjYi1hY2NhMTBmOGFhZGUiLCJldmVudF9pZCI6IjhhOGZhODlhLWE4ODktNGI2Ni05OTE2LTlmODkzMzBlODE2MCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MTIzNTAyMjMsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMi5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMl9ZbWFyb0c1S08iLCJleHAiOjE2MTI0MjQwMjQsImlhdCI6MTYxMjQyMDQyNCwianRpIjoiYzg2NTYzNDMtNTg2Ny00MTMzLWE1OGEtYjljNDYwNjQwM2Q5IiwiY2xpZW50X2lkIjoiMXBiYmE2MGhwNWRkZzZvbmR1cW5taWN2ZWQiLCJ1c2VybmFtZSI6IjA1NGZkNWI3LTRkMWEtNDYxNS1hZmU0LWFjZjVmMWNjN2U5OCJ9.DYAlvhA8-5ey7UHyowZOMAQdMuht3tF_g_MEX4gdWzuH8sVGphLpw500T_19OLxcT5kJ6pcnPp0uiFkh5kB68BdrJpF_Fu7m2fuvog-WjQYltg13w7epkpmMkMsSbKTG5XMXeiznmqLFHDUD-efdtlqvVMe6PrzpQkjcMwi8v9KK52sFtBa7AoV03ngFzjaq1yUgAQ7r7WEUHSOpYol2tgBbSaBAPmEHqemcRDaaGqf6zgxfkwpVl171q72wxqml2F9f-iB7B0jiySKLE6H1JCr6gzO21_adLpuGM5SJRBXWZzoTms4m1rN3WB4kx0XXri_r4xyqyBRa_s1tx_y5xg"
+    ],
+    "Host": ["api.dev.fixpdq.app"],
+    "origin": ["http://localhost:3000"],
+    "referer": ["http://localhost:3000/"],
+    "sec-fetch-dest": ["empty"],
+    "sec-fetch-mode": ["cors"],
+    "sec-fetch-site": ["cross-site"],
+    "User-Agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36"
+    ],
+    "X-Amzn-Trace-Id": ["Root=1-601b96be-6067ca7a4b81f84240a06027"],
+    "X-Forwarded-For": ["175.45.57.230"],
+    "X-Forwarded-Port": ["443"],
+    "X-Forwarded-Proto": ["https"]
+  },
+  "queryStringParameters": {
+    "actionid": "list",
+    "workitems": "0deb14a7-6244-4d00-9f6a-7030a685ff83,10716392-04a9-4f91-8049-89ecd68f169c,689b6194-fdb8-4c8c-8a78-a6390ce95248,69f789f2-6d73-467f-b5da-b42262c11198,72f9a15d-0964-4dbb-b3f2-9de0469f6afc,cc2ac8d3-bdd8-4a68-8a55-fc5e97c394d1"
+  },
+  "multiValueQueryStringParameters": {
+    "actionid": ["list"],
+    "workitems": [
+      "0deb14a7-6244-4d00-9f6a-7030a685ff83,10716392-04a9-4f91-8049-89ecd68f169c,689b6194-fdb8-4c8c-8a78-a6390ce95248,69f789f2-6d73-467f-b5da-b42262c11198,72f9a15d-0964-4dbb-b3f2-9de0469f6afc,cc2ac8d3-bdd8-4a68-8a55-fc5e97c394d1"
+    ]
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "zdxrka",
+    "authorizer": {
+      "claims": {
+        "sub": "1862ae62-d240-4060-81cb-acca10f8aade",
+        "event_id": "8a8fa89a-a889-4b66-9916-9f89330e8160",
+        "token_use": "access",
+        "scope": "aws.cognito.signin.user.admin",
+        "auth_time": "1612350223",
+        "iss": "https://cognito-idp.ap-southeast-2.amazonaws.com/ap-southeast-2_YmaroG5KO",
+        "exp": "Thu Feb 04 07:33:44 UTC 2021",
+        "iat": "Thu Feb 04 06:33:44 UTC 2021",
+        "jti": "c8656343-5867-4133-a58a-b9c4606403d9",
+        "client_id": "1pbba60hp5ddg6onduqnmicved",
+        "username": "054fd5b7-4d1a-4615-afe4-acf5f1cc7e98"
+      }
+    },
+    "resourcePath": "/actions/workitems",
+    "httpMethod": "POST",
+    "extendedRequestId": "aNR9wGKrSwMF95w=",
+    "requestTime": "04/Feb/2021:06:39:58 +0000",
+    "path": "/actions/workitems",
+    "accountId": "538222035340",
+    "protocol": "HTTP/1.1",
+    "stage": "prod",
+    "domainPrefix": "api",
+    "requestTimeEpoch": 1612420798307,
+    "requestId": "e719d9a3-9bf1-4ee5-8dba-2a0d8b3a47e4",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "175.45.57.230",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36",
+      "user": null
+    },
+    "domainName": "api.dev.fixpdq.app",
+    "apiId": "n7ih83okac"
+  },
+  "body": "[\"69f789f2-6d73-467f-b5da-b42262c11198\", \"72f9a15d-0964-4dbb-b3f2-9de0469f6afc\"]",
+  "isBase64Encoded": false
+}

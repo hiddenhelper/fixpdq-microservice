@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+
+Globals:
+  Function:
+    Timeout: 10
+    Environment:
+      Variables:
+        ENVIRONMENT: "dev"
+        ACTIONS_LOGGING_LEVEL: "debug"
+        ACTIONS_LOGGING_DRIVER: "console"
+        ACTIONS_DB_DYNAMODB: "actions"
+Resources:
+  ActionsServiceFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: actions-service-lda
+      CodeUri: actions-service/
+      Handler: app.handler
+      Runtime: nodejs12.x
+      Events:
+        ActionsService:
+          Type: Api
+          Properties:
+            Path: /
+            Method: GET

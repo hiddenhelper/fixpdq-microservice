@@ -1,0 +1,99 @@
+{
+  "resource": "/teams",
+  "path": "/teams",
+  "httpMethod": "POST",
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Authorization": "Bearer eyJraWQiOiJSWWJERllBMXVSMG9QeHhiNFdqQlREUnpNdGxQczN1QkZocG1XbTA4eUZFPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJlNjdmNWYxNi1kNWFlLTQwMzItOTc0My0yNjZkMTk3MDdjZTYiLCJhdWQiOiIxcGJiYTYwaHA1ZGRnNm9uZHVxbm1pY3ZlZCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6ImY2ODdiYTFlLTI0YjItNGIxMy04MjllLTYwN2M3ODkyMGJlMCIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjAxODIxNTcxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfWW1hcm9HNUtPIiwiY29nbml0bzp1c2VybmFtZSI6ImZhNGQzYWVkLWQ0ZTktNGYzNi1iOWQxLWY1MjQ5OWU5ZGQ5ZiIsImV4cCI6MTYwMTgyNTE3MSwiaWF0IjoxNjAxODIxNTcxLCJlbWFpbCI6InJpY2hhcmRAbWluZGdpbmF0aXZlLmNvbSJ9.Wmw250L_FfFJa7PI3ejrbzhP7NwLD1Ybq7uVfCZznnShHnssIo82Rq6Ow9EiEgz7Z-QVG8epjMRXuHGSn99N5M4T2tHul8ht_vyKeZeAs4f_1Lx_-BwD-gtA1LIsKMUP3REZ1LGnwZ0DU-jxDgbEvjvSQBRlOYHcjUiUXLiBDufIGPkCmom0tJIkJW65AyIXDO3LrDf5UlWkoYYih1HeaPdOcnxyH8r_uBOdI30jMGnv-grlziaHHuqonVCgozJdsXbz-Qv9RBN_bWO4dXlDY3EsS7juWEzyvaJRpSRY9-51w-ky9v9ClWF4RSBXiZ557yWqrRYEXO2c638R4NWOXQ",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json",
+    "Host": "api.dev.fixpdq.app",
+    "Postman-Token": "1156b993-0b87-4e75-baa1-91690a8bfc84",
+    "User-Agent": "PostmanRuntime/7.26.5",
+    "X-Amzn-Trace-Id": "Root=1-5f79e34e-2410988d6511fb5e36e8bffd",
+    "X-Forwarded-For": "103.66.125.115",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "*/*"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Authorization": [
+      "Bearer eyJraWQiOiJSWWJERllBMXVSMG9QeHhiNFdqQlREUnpNdGxQczN1QkZocG1XbTA4eUZFPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJlNjdmNWYxNi1kNWFlLTQwMzItOTc0My0yNjZkMTk3MDdjZTYiLCJhdWQiOiIxcGJiYTYwaHA1ZGRnNm9uZHVxbm1pY3ZlZCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJldmVudF9pZCI6ImY2ODdiYTFlLTI0YjItNGIxMy04MjllLTYwN2M3ODkyMGJlMCIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjAxODIxNTcxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfWW1hcm9HNUtPIiwiY29nbml0bzp1c2VybmFtZSI6ImZhNGQzYWVkLWQ0ZTktNGYzNi1iOWQxLWY1MjQ5OWU5ZGQ5ZiIsImV4cCI6MTYwMTgyNTE3MSwiaWF0IjoxNjAxODIxNTcxLCJlbWFpbCI6InJpY2hhcmRAbWluZGdpbmF0aXZlLmNvbSJ9.Wmw250L_FfFJa7PI3ejrbzhP7NwLD1Ybq7uVfCZznnShHnssIo82Rq6Ow9EiEgz7Z-QVG8epjMRXuHGSn99N5M4T2tHul8ht_vyKeZeAs4f_1Lx_-BwD-gtA1LIsKMUP3REZ1LGnwZ0DU-jxDgbEvjvSQBRlOYHcjUiUXLiBDufIGPkCmom0tJIkJW65AyIXDO3LrDf5UlWkoYYih1HeaPdOcnxyH8r_uBOdI30jMGnv-grlziaHHuqonVCgozJdsXbz-Qv9RBN_bWO4dXlDY3EsS7juWEzyvaJRpSRY9-51w-ky9v9ClWF4RSBXiZ557yWqrRYEXO2c638R4NWOXQ"
+    ],
+    "Cache-Control": [
+      "no-cache"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Host": [
+      "api.dev.fixpdq.app"
+    ],
+    "Postman-Token": [
+      "1156b993-0b87-4e75-baa1-91690a8bfc84"
+    ],
+    "User-Agent": [
+      "PostmanRuntime/7.26.5"
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-5f79e34e-2410988d6511fb5e36e8bffd"
+    ],
+    "X-Forwarded-For": [
+      "103.66.125.115"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": {
+    "creatorid": "dfbc3fa3-d506-4eb9-b1a1-1b12f5b604b9"
+  },
+  "multiValueQueryStringParameters": {
+    "creatorid": [
+      "dfbc3fa3-d506-4eb9-b1a1-1b12f5b604b9"
+    ]
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "r400ev",
+    "resourcePath": "/teams",
+    "httpMethod": "POST",
+    "extendedRequestId": "T5B0NH2XywMFUJA=",
+    "requestTime": "04/Oct/2020:14:59:26 +0000",
+    "path": "/teams",
+    "accountId": "538222035340",
+    "protocol": "HTTP/1.1",
+    "stage": "prod",
+    "domainPrefix": "api",
+    "requestTimeEpoch": 1601823566056,
+    "requestId": "a973543f-8719-4d1c-aefc-7fdb57d897e7",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "103.66.125.115",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "PostmanRuntime/7.26.5",
+      "user": null
+    },
+    "domainName": "api.dev.fixpdq.app",
+    "apiId": "n7ih83okac"
+  },
+  "body": "{\n    \"name\": \"team\",\n \"ownerid\": \"0\",\n    \"parentid\": 0,\n    \"date_due\": 1601725915\n}",
+  "isBase64Encoded": false
+}

@@ -1,0 +1,27 @@
+{
+  "name": "inf",
+  "version": "0.1.0",
+  "bin": {
+    "inf": "bin/inf.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest",
+    "deploy": "npx cdk deploy",
+    "destroy": "npx cdk destroy",
+    "synth": "npx cdk synth",
+    "diff": "npx cdk diff"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.59.0",
+    "aws-cdk": "1.59.0",
+    "jest": "24.9.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-dynamodb": "1.59.0",
+    "@aws-cdk/aws-iam": "1.59.0",
+    "@aws-cdk/aws-lambda": "1.59.0",
+    "@aws-cdk/core": "1.59.0"
+  }
+}

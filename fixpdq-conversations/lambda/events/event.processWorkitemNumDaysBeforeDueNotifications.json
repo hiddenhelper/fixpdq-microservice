@@ -1,0 +1,17 @@
+{
+  "action": "processWorkitemNumDaysBeforeDueNotifications",
+  "payload": {
+      "notifications": [
+          {
+              "workitemid": "c1ea9635-0b45-45ea-afcb-3fe92771fea5",
+              "ownerid": "52941457-80a9-498d-b171-c47b8aed86e7",
+              "creatorid": "054fd5b7-4d1a-4615-afe4-acf5f1cc7e98",
+              "topic": "Progress?",
+              "text": "Will this item be completed before due date?",
+              "hivemind": {
+                  "allowHivemindProcessing": false
+              }
+          }
+      ]
+  }
+}

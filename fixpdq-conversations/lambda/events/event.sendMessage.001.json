@@ -1,0 +1,10 @@
+{
+  "action": "sendMessage",
+  "payload": {
+      "channelId": "CH730cbe33666d4c4cb93b52fa258ffc07",
+      "conversationid": "6c288d17-6f90-435b-96e7-b2f3c9ea36a3",
+      "author": "f23139dc-bc36-476d-b38e-f82c51ebb2d7",
+      "body": "Say that one more time?",
+      "workitemid": "ff8b6581-a86e-4643-81ef-5cd9d2a4c510"
+  }
+}

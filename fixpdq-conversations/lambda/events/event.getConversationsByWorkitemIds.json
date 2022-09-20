@@ -1,0 +1,133 @@
+{
+  "resource": "/conversations/workitems",
+  "path": "/conversations/workitems",
+  "httpMethod": "POST",
+  "headers": {
+      "accept": "application/json",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,ru;q=0.7",
+      "Authorization": "Bearer eyJraWQiOiJGa0VOYVVsaFwvdHA3T0lcL2xxZ1BFT0kwQnY2S1NtK2tzcWRFXC9hQXZsMlJJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxODYyYWU2Mi1kMjQwLTQwNjAtODFjYi1hY2NhMTBmOGFhZGUiLCJjb2duaXRvOmdyb3VwcyI6WyIxYTEwYjgyMS1hNzZiLTRhMDQtYThhYi0zZGNkMTMzN2ZjNTkubWVtYmVyIiwiZmMyMTIzZTctM2E4ZC00OTM5LWI5ZjMtMTcwMGNjMTQ1MWVkLm1lbWJlciIsIjY5OWIxM2I0LTc5NDAtNDk0YS04NjQ3LTkwZGE1ZmJkNDIzOS5tZW1iZXIiLCJhZjk1NGNjNS0yNmE4LTRkODMtYmQ3MC1iN2Q4MjdiMDhmNzIubWVtYmVyIiwiMWFlMTUxNTYtM2YwMi00ZDY0LWFjMzgtNzQwY2JhMWYwZWM2LmFkbWluIiwiMzczMmY3ZjUtMWFhMy00YjAzLWE0MzItNGFmOWIxYTY5Mjc1LmFkbWluIl0sImV2ZW50X2lkIjoiMjE1M2UyMDItODRhYi00NDMxLWFjNmQtODc5MzFkZmRjMDRhIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTYxNzg3NDczOCwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoZWFzdC0yLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoZWFzdC0yX1ltYXJvRzVLTyIsImV4cCI6MTYxNzk0OTU4NSwiaWF0IjoxNjE3OTQ1OTg1LCJqdGkiOiIxZDhhYTAzMS0zMmUzLTQ2YzUtYTBhNy01YjEwZDA3MTRiNTQiLCJjbGllbnRfaWQiOiIxcGJiYTYwaHA1ZGRnNm9uZHVxbm1pY3ZlZCIsInVzZXJuYW1lIjoiMDU0ZmQ1YjctNGQxYS00NjE1LWFmZTQtYWNmNWYxY2M3ZTk4In0.DwmjepDIsn_3jL7xnePpRZg1w_ti-mgYvEU61Nt4GSIn-LA_kFr_JfQLfvsjiJmKByrYlALLfmCz0CY7D4pNWPijL530uaoRY3AK8ylvtfbWf85NDehaSEpTZ89SSTjVP8usJd17BXHnVRdNvM-OcfqD5gAVcGuAjsqusS16LG8TYIDQKq5karvCa_KmYFCiJkhJYc9kSlyLbI5UFlKZ_DqhU_TRLyQx1-z2YWJ6_V3RiDnlOgLqZA7cruZE-v9WBLAz6GHlwzjrV-y7nA60VshX7rDBfzno-Mx2fCE52mjPfLoqHhVFGT8KprVVvY9UyHr0PbUzI4vfE9i38D16lw",
+      "content-type": "application/json; charset=UTF-8",
+      "Host": "api.dev.fixpdq.app",
+      "origin": "http://localhost:3000",
+      "referer": "http://localhost:3000/",
+      "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "cross-site",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36",
+      "X-Amzn-Trace-Id": "Root=1-606ff178-6559e43c02fe06e34083ccfb",
+      "X-Forwarded-For": "219.76.25.117",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+      "accept": [
+          "application/json"
+      ],
+      "accept-encoding": [
+          "gzip, deflate, br"
+      ],
+      "accept-language": [
+          "en-GB,en-US;q=0.9,en;q=0.8,ru;q=0.7"
+      ],
+      "Authorization": [
+          "Bearer eyJraWQiOiJGa0VOYVVsaFwvdHA3T0lcL2xxZ1BFT0kwQnY2S1NtK2tzcWRFXC9hQXZsMlJJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxODYyYWU2Mi1kMjQwLTQwNjAtODFjYi1hY2NhMTBmOGFhZGUiLCJjb2duaXRvOmdyb3VwcyI6WyIxYTEwYjgyMS1hNzZiLTRhMDQtYThhYi0zZGNkMTMzN2ZjNTkubWVtYmVyIiwiZmMyMTIzZTctM2E4ZC00OTM5LWI5ZjMtMTcwMGNjMTQ1MWVkLm1lbWJlciIsIjY5OWIxM2I0LTc5NDAtNDk0YS04NjQ3LTkwZGE1ZmJkNDIzOS5tZW1iZXIiLCJhZjk1NGNjNS0yNmE4LTRkODMtYmQ3MC1iN2Q4MjdiMDhmNzIubWVtYmVyIiwiMWFlMTUxNTYtM2YwMi00ZDY0LWFjMzgtNzQwY2JhMWYwZWM2LmFkbWluIiwiMzczMmY3ZjUtMWFhMy00YjAzLWE0MzItNGFmOWIxYTY5Mjc1LmFkbWluIl0sImV2ZW50X2lkIjoiMjE1M2UyMDItODRhYi00NDMxLWFjNmQtODc5MzFkZmRjMDRhIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTYxNzg3NDczOCwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoZWFzdC0yLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoZWFzdC0yX1ltYXJvRzVLTyIsImV4cCI6MTYxNzk0OTU4NSwiaWF0IjoxNjE3OTQ1OTg1LCJqdGkiOiIxZDhhYTAzMS0zMmUzLTQ2YzUtYTBhNy01YjEwZDA3MTRiNTQiLCJjbGllbnRfaWQiOiIxcGJiYTYwaHA1ZGRnNm9uZHVxbm1pY3ZlZCIsInVzZXJuYW1lIjoiMDU0ZmQ1YjctNGQxYS00NjE1LWFmZTQtYWNmNWYxY2M3ZTk4In0.DwmjepDIsn_3jL7xnePpRZg1w_ti-mgYvEU61Nt4GSIn-LA_kFr_JfQLfvsjiJmKByrYlALLfmCz0CY7D4pNWPijL530uaoRY3AK8ylvtfbWf85NDehaSEpTZ89SSTjVP8usJd17BXHnVRdNvM-OcfqD5gAVcGuAjsqusS16LG8TYIDQKq5karvCa_KmYFCiJkhJYc9kSlyLbI5UFlKZ_DqhU_TRLyQx1-z2YWJ6_V3RiDnlOgLqZA7cruZE-v9WBLAz6GHlwzjrV-y7nA60VshX7rDBfzno-Mx2fCE52mjPfLoqHhVFGT8KprVVvY9UyHr0PbUzI4vfE9i38D16lw"
+      ],
+      "content-type": [
+          "application/json; charset=UTF-8"
+      ],
+      "Host": [
+          "api.dev.fixpdq.app"
+      ],
+      "origin": [
+          "http://localhost:3000"
+      ],
+      "referer": [
+          "http://localhost:3000/"
+      ],
+      "sec-ch-ua": [
+          "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+      ],
+      "sec-ch-ua-mobile": [
+          "?0"
+      ],
+      "sec-fetch-dest": [
+          "empty"
+      ],
+      "sec-fetch-mode": [
+          "cors"
+      ],
+      "sec-fetch-site": [
+          "cross-site"
+      ],
+      "User-Agent": [
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36"
+      ],
+      "X-Amzn-Trace-Id": [
+          "Root=1-606ff178-6559e43c02fe06e34083ccfb"
+      ],
+      "X-Forwarded-For": [
+          "219.76.25.117"
+      ],
+      "X-Forwarded-Port": [
+          "443"
+      ],
+      "X-Forwarded-Proto": [
+          "https"
+      ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+      "resourceId": "5dwtzd",
+      "authorizer": {
+          "claims": {
+              "sub": "1862ae62-d240-4060-81cb-acca10f8aade",
+              "cognito:groups": "1a10b821-a76b-4a04-a8ab-3dcd1337fc59.member,fc2123e7-3a8d-4939-b9f3-1700cc1451ed.member,699b13b4-7940-494a-8647-90da5fbd4239.member,af954cc5-26a8-4d83-bd70-b7d827b08f72.member,1ae15156-3f02-4d64-ac38-740cba1f0ec6.admin,3732f7f5-1aa3-4b03-a432-4af9b1a69275.admin",
+              "event_id": "2153e202-84ab-4431-ac6d-87931dfdc04a",
+              "token_use": "access",
+              "scope": "aws.cognito.signin.user.admin",
+              "auth_time": "1617874738",
+              "iss": "https://cognito-idp.ap-southeast-2.amazonaws.com/ap-southeast-2_YmaroG5KO",
+              "exp": "Fri Apr 09 06:26:25 UTC 2021",
+              "iat": "Fri Apr 09 05:26:25 UTC 2021",
+              "jti": "1d8aa031-32e3-46c5-a0a7-5b10d0714b54",
+              "client_id": "1pbba60hp5ddg6onduqnmicved",
+              "username": "054fd5b7-4d1a-4615-afe4-acf5f1cc7e98"
+          }
+      },
+      "resourcePath": "/conversations/workitems",
+      "httpMethod": "POST",
+      "extendedRequestId": "dgKq5E3JSwMFb6w=",
+      "requestTime": "09/Apr/2021:06:17:28 +0000",
+      "path": "/conversations/workitems",
+      "accountId": "538222035340",
+      "protocol": "HTTP/1.1",
+      "stage": "prod",
+      "domainPrefix": "api",
+      "requestTimeEpoch": 1617949048863,
+      "requestId": "6b593bf2-dd7b-4b0c-9139-7f828c976e49",
+      "identity": {
+          "cognitoIdentityPoolId": null,
+          "accountId": null,
+          "cognitoIdentityId": null,
+          "caller": null,
+          "sourceIp": "219.76.25.117",
+          "principalOrgId": null,
+          "accessKey": null,
+          "cognitoAuthenticationType": null,
+          "cognitoAuthenticationProvider": null,
+          "userArn": null,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36",
+          "user": null
+      },
+      "domainName": "api.dev.fixpdq.app",
+      "apiId": "n7ih83okac"
+  },
+  "body": "[\"a29d973c-06be-48aa-904e-dde45b929323\",\"6b89c952-7435-4577-a2e2-521cb7c60a86\",\"6b2fd93a-558c-43ad-b6d9-d5be93625f64\",\"3f7dc5d2-6995-42c8-b1c3-3f8b41825fa5\",\"f00a27bb-c3c2-428d-a561-12000d114c29\",\"e0755f0c-9806-41e7-912c-b70fd1308c10\",\"314b785f-4064-40a0-968e-b3ab4dacd419\",\"7a02ee34-88da-4cef-913b-925fecd147d4\",\"1efe5926-7b22-417e-9372-57df692e0010\",\"aaecdf9c-d52c-46ff-a3c2-bd9776f43af1\",\"f5417983-a2cd-484c-9634-55d37b734ca4\",\"9c64e07b-6d68-4a87-aaf7-a7af0f286b92\",\"dd08b950-8732-4c67-b3f7-530a49ff7c26\",\"87b2a98a-0ec8-4987-9ce2-124245ebe9ef\",\"8879fb61-d484-4bfd-ae43-f32401a731e9\",\"816d88b0-85fc-4e3d-b41b-2f70643a78d2\",\"8252fbc4-a60e-4d54-a923-7ba257586ea9\",\"052aae2c-605b-4d9c-ad65-b0bf505c1a79\",\"4f6ae791-78df-4710-8757-1b7718c99150\",\"52730967-480f-4f84-bb34-53d91e64d331\",\"0face7a8-0812-4651-a43a-09b0c72cd8c9\",\"47551f56-e814-468b-a619-af707f51e9fb\",\"ea517aa9-9dcb-4aff-be9f-c0bdb3b21c60\",\"5b248aab-e3d7-426e-bf4e-fc0a6ba6590f\",\"ddcb938e-2ce6-4c4e-973f-7a6b3b8e85d7\",\"8e456174-9e5f-4400-bcbd-afca953aae69\",\"452d8bc0-b027-4ccb-ac10-65825cea169c\",\"ea51e7e6-2029-4e3f-a34e-d1e6cf36bc59\",\"12613efa-12a6-473b-84a6-ba6ae97b9379\",\"31cd5f73-2299-45b6-9362-1643f7ec1dc1\",\"c2aab336-ce03-4b4b-aa1e-0b35b4ffc923\",\"cf74194a-1fd1-4d64-932a-02fa9f77b965\",\"804bc938-2738-49cd-ac12-ad4504c56afa\",\"9d6a9e68-f8ef-45f8-b09a-636ea93efca9\",\"7ba1ed53-464c-4b15-aa59-9801e63e67bb\",\"e24310c5-e73e-4e50-89c0-8e3301569e33\",\"bd94c07a-829c-45d9-9f85-a6e7767bba6a\",\"2bca50be-d000-4aa6-bc1a-7a05f951581f\",\"192397e0-ffea-446b-aad9-c458663bce68\",\"b60c4308-7ba3-42ce-b7ae-a7583791a29d\",\"99ff6e15-3fef-4cff-af7c-ec4f6ae98a79\"]",
+  "isBase64Encoded": false
+}

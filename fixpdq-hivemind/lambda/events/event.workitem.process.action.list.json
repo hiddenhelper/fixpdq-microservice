@@ -1,0 +1,18 @@
+{
+  "action": "assign",
+  "payload": {
+    "actionName": "assign",
+    "topicName": "Action: Assign Work Item",
+    "workItem": "b0f70d46-e638-4539-b54b-246faf8d621e",
+    "message": "@rommel@fixpdq.com. ciniy98793@tinkmail.net has assigned this work item to you. Do you understand this work item, and what you have been asked to deliver?",
+    "messageOwner": "6a75f8e9-6e4c-41ad-ab2b-870d13c0ba97",
+    "participants": [
+      {
+        "Username": "e36e9d09-6354-48c9-9e92-6d61f824c665"
+      },
+      {
+        "Username": "6a75f8e9-6e4c-41ad-ab2b-870d13c0ba97"
+      }
+    ]
+  }
+}

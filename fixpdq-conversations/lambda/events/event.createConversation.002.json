@@ -1,0 +1,25 @@
+{
+  "action": "processConversationList",
+  "payload": {
+    "conversations": [
+      {
+        "actionName": "housekeeping",
+        "topicName": "Hi! How things are going with this item? I see that it is overdue. Do you think it is possible to resolve it today?",
+        "actionOwner": "52941457-80a9-498d-b171-c47b8aed86e7",
+        "workitemid": "5b6897fe-d98b-4626-a846-2f130e50fb06",
+        "hivemindUser": "f23139dc-bc36-476d-b38e-f82c51ebb2d7",
+        "channelId": "CHecc5e1695d8846aebe3605ee2332d72d",
+        "conversationid": "b48e35ed-08f7-4e1c-afc9-ec2629711388",
+        "body": "Message1",
+        "participants": [
+          {
+            "Username": "52941457-80a9-498d-b171-c47b8aed86e7"
+          },
+          {
+            "Username": "054fd5b7-4d1a-4615-afe4-acf5f1cc7e98"
+          }
+        ]
+      }
+    ]
+  }
+}

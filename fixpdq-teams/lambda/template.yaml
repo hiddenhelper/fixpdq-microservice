@@ -1,0 +1,29 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+
+
+Globals:
+  Function:
+    Timeout: 3
+    Environment:
+      Variables:
+        ENVIRONMENT: "dev"
+        LOGGING_LEVEL: "debug"
+        LOGGING_DRIVER: "console"
+        DB_DYNAMODB: "teams"
+
+Resources:
+  TeamServiceFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: teams-service-lda
+      CodeUri: teams-service/
+      Handler: app.handler
+      Runtime: nodejs12.x
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get

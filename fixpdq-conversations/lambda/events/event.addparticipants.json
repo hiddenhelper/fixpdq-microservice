@@ -1,0 +1,139 @@
+{
+  "resource": "/conversations",
+  "path": "/conversations",
+  "httpMethod": "POST",
+  "headers": {
+      "accept": "application/json",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,ru;q=0.7",
+      "Authorization": "Bearer eyJraWQiOiJGa0VOYVVsaFwvdHA3T0lcL2xxZ1BFT0kwQnY2S1NtK2tzcWRFXC9hQXZsMlJJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5Zjg4NzVlYS0zYjRkLTRjYzItYTNjMC03MTIzYTU5MmQzYjUiLCJjb2duaXRvOmdyb3VwcyI6WyIzNzMyZjdmNS0xYWEzLTRiMDMtYTQzMi00YWY5YjFhNjkyNzUubWVtYmVyIiwiY2IyNjlkM2QtMDgzOS00MjIyLWIwMGItODI4MWVjMzRhY2FlLm1lbWJlciIsImZjYzU1Mjc3LTllZjQtNDZmMi1hYmJhLWJlZjRiODFjZjEwNC5tZW1iZXIiLCI5ZmVkYzk1MC04MDg1LTRjNzctOTc5OS05NDYwZGRiYTkxNTEubWVtYmVyIiwiYmQxZjIxMjItNjA2ZC00OGZkLWFmMmYtZGMxYzJlNDEyNjVmLm1lbWJlciIsImVlMmVjYTg0LTE5ZDctNGY4MC05NjhhLWNlZDBiOTU0NTgwYy5tZW1iZXIiLCJkZjNiNmE1YS02Y2YxLTRhZmItOGQzMy0wNjAxYmFmYjQwNmMuaW52aXRlZCJdLCJldmVudF9pZCI6ImViMDdmY2M0LWM2NGUtNDMxYy1hZWU2LTE5MzUzOGI5ZGExZCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MjUwMjE4OTUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMi5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMl9ZbWFyb0c1S08iLCJleHAiOjE2MjUxMTc3MDAsImlhdCI6MTYyNTExNDEwMCwianRpIjoiOGVkMzlhMGQtMWRhOS00MDY5LWEzYWItZjg2YzJlMDcxODE4IiwiY2xpZW50X2lkIjoiMXBiYmE2MGhwNWRkZzZvbmR1cW5taWN2ZWQiLCJ1c2VybmFtZSI6IjUyOTQxNDU3LTgwYTktNDk4ZC1iMTcxLWM0N2I4YWVkODZlNyJ9.GmKKa2iAJBEvkxhRoR_M93Ld6ZqotJZzx5wPZTVMviLkO21aKeog2s4tBXTi9eQcdfyjd8kwAhKxNeiGzyr3C2sA7t3kfaPUg9d3Y92gKluTUBn9YtcLF716F4ROlECOrybF6R5YmXP-RYnmMwaUn2auNYMjFI2OQX5aVBcJ4gmh0Kh7qgWykVgYUb3yl3GOt-2I6sCBbTFAdc1n6hWnb6zQoHVoq6yIV8-SXlIbOb1NayjrZM7YmLXovNwUJ-3s3Uv8tlt_GbaWqnFZuu0QfyieryoRj81C9rhbARZ_1v123GV8W73YeWhZrG3DRxWocJ7pBBb5sPKUsy3D_XgdEg",
+      "content-type": "application/json; charset=UTF-8",
+      "Host": "api.dev.fixpdq.app",
+      "origin": "http://localhost:3000",
+      "referer": "http://localhost:3000/",
+      "sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "cross-site",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36",
+      "X-Amzn-Trace-Id": "Root=1-60dd4c93-450a0f1d0777bbbe2725290e",
+      "X-Forwarded-For": "219.76.25.114",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+      "accept": [
+          "application/json"
+      ],
+      "accept-encoding": [
+          "gzip, deflate, br"
+      ],
+      "accept-language": [
+          "en-GB,en-US;q=0.9,en;q=0.8,ru;q=0.7"
+      ],
+      "Authorization": [
+          "Bearer eyJraWQiOiJGa0VOYVVsaFwvdHA3T0lcL2xxZ1BFT0kwQnY2S1NtK2tzcWRFXC9hQXZsMlJJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5Zjg4NzVlYS0zYjRkLTRjYzItYTNjMC03MTIzYTU5MmQzYjUiLCJjb2duaXRvOmdyb3VwcyI6WyIzNzMyZjdmNS0xYWEzLTRiMDMtYTQzMi00YWY5YjFhNjkyNzUubWVtYmVyIiwiY2IyNjlkM2QtMDgzOS00MjIyLWIwMGItODI4MWVjMzRhY2FlLm1lbWJlciIsImZjYzU1Mjc3LTllZjQtNDZmMi1hYmJhLWJlZjRiODFjZjEwNC5tZW1iZXIiLCI5ZmVkYzk1MC04MDg1LTRjNzctOTc5OS05NDYwZGRiYTkxNTEubWVtYmVyIiwiYmQxZjIxMjItNjA2ZC00OGZkLWFmMmYtZGMxYzJlNDEyNjVmLm1lbWJlciIsImVlMmVjYTg0LTE5ZDctNGY4MC05NjhhLWNlZDBiOTU0NTgwYy5tZW1iZXIiLCJkZjNiNmE1YS02Y2YxLTRhZmItOGQzMy0wNjAxYmFmYjQwNmMuaW52aXRlZCJdLCJldmVudF9pZCI6ImViMDdmY2M0LWM2NGUtNDMxYy1hZWU2LTE5MzUzOGI5ZGExZCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MjUwMjE4OTUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMi5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMl9ZbWFyb0c1S08iLCJleHAiOjE2MjUxMTc3MDAsImlhdCI6MTYyNTExNDEwMCwianRpIjoiOGVkMzlhMGQtMWRhOS00MDY5LWEzYWItZjg2YzJlMDcxODE4IiwiY2xpZW50X2lkIjoiMXBiYmE2MGhwNWRkZzZvbmR1cW5taWN2ZWQiLCJ1c2VybmFtZSI6IjUyOTQxNDU3LTgwYTktNDk4ZC1iMTcxLWM0N2I4YWVkODZlNyJ9.GmKKa2iAJBEvkxhRoR_M93Ld6ZqotJZzx5wPZTVMviLkO21aKeog2s4tBXTi9eQcdfyjd8kwAhKxNeiGzyr3C2sA7t3kfaPUg9d3Y92gKluTUBn9YtcLF716F4ROlECOrybF6R5YmXP-RYnmMwaUn2auNYMjFI2OQX5aVBcJ4gmh0Kh7qgWykVgYUb3yl3GOt-2I6sCBbTFAdc1n6hWnb6zQoHVoq6yIV8-SXlIbOb1NayjrZM7YmLXovNwUJ-3s3Uv8tlt_GbaWqnFZuu0QfyieryoRj81C9rhbARZ_1v123GV8W73YeWhZrG3DRxWocJ7pBBb5sPKUsy3D_XgdEg"
+      ],
+      "content-type": [
+          "application/json; charset=UTF-8"
+      ],
+      "Host": [
+          "api.dev.fixpdq.app"
+      ],
+      "origin": [
+          "http://localhost:3000"
+      ],
+      "referer": [
+          "http://localhost:3000/"
+      ],
+      "sec-ch-ua": [
+          "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\""
+      ],
+      "sec-ch-ua-mobile": [
+          "?0"
+      ],
+      "sec-fetch-dest": [
+          "empty"
+      ],
+      "sec-fetch-mode": [
+          "cors"
+      ],
+      "sec-fetch-site": [
+          "cross-site"
+      ],
+      "User-Agent": [
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36"
+      ],
+      "X-Amzn-Trace-Id": [
+          "Root=1-60dd4c93-450a0f1d0777bbbe2725290e"
+      ],
+      "X-Forwarded-For": [
+          "219.76.25.114"
+      ],
+      "X-Forwarded-Port": [
+          "443"
+      ],
+      "X-Forwarded-Proto": [
+          "https"
+      ]
+  },
+  "queryStringParameters": {
+      "participant": ""
+  },
+  "multiValueQueryStringParameters": {
+      "participant": [
+          ""
+      ]
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+      "resourceId": "vsg3sl",
+      "authorizer": {
+          "claims": {
+              "sub": "9f8875ea-3b4d-4cc2-a3c0-7123a592d3b5",
+              "cognito:groups": "3732f7f5-1aa3-4b03-a432-4af9b1a69275.member,cb269d3d-0839-4222-b00b-8281ec34acae.member,fcc55277-9ef4-46f2-abba-bef4b81cf104.member,9fedc950-8085-4c77-9799-9460ddba9151.member,bd1f2122-606d-48fd-af2f-dc1c2e41265f.member,ee2eca84-19d7-4f80-968a-ced0b954580c.member,df3b6a5a-6cf1-4afb-8d33-0601bafb406c.invited",
+              "event_id": "eb07fcc4-c64e-431c-aee6-193538b9da1d",
+              "token_use": "access",
+              "scope": "aws.cognito.signin.user.admin",
+              "auth_time": "1625021895",
+              "iss": "https://cognito-idp.ap-southeast-2.amazonaws.com/ap-southeast-2_YmaroG5KO",
+              "exp": "Thu Jul 01 05:35:00 UTC 2021",
+              "iat": "Thu Jul 01 04:35:00 UTC 2021",
+              "jti": "8ed39a0d-1da9-4069-a3ab-f86c2e071818",
+              "client_id": "1pbba60hp5ddg6onduqnmicved",
+              "username": "52941457-80a9-498d-b171-c47b8aed86e7"
+          }
+      },
+      "resourcePath": "/conversations",
+      "httpMethod": "POST",
+      "extendedRequestId": "BxjnJGnJSwMFfYQ=",
+      "requestTime": "01/Jul/2021:05:03:15 +0000",
+      "path": "/conversations",
+      "accountId": "538222035340",
+      "protocol": "HTTP/1.1",
+      "stage": "prod",
+      "domainPrefix": "api",
+      "requestTimeEpoch": 1625115795941,
+      "requestId": "e859a44e-e901-402a-adb8-efdf452e8b47",
+      "identity": {
+          "cognitoIdentityPoolId": null,
+          "accountId": null,
+          "cognitoIdentityId": null,
+          "caller": null,
+          "sourceIp": "219.76.25.114",
+          "principalOrgId": null,
+          "accessKey": null,
+          "cognitoAuthenticationType": null,
+          "cognitoAuthenticationProvider": null,
+          "userArn": null,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36",
+          "user": null
+      },
+      "domainName": "api.dev.fixpdq.app",
+      "apiId": "n7ih83okac"
+  },
+  "body": "{\"useridlist\":[\"52941457-80a9-498d-b171-c47b8aed86e8\"],\"workitemidlist\":[\"5b6897fe-d98b-4626-a846-2f130e50fb06\"]}",
+  "isBase64Encoded": false
+}

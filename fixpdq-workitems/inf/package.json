@@ -1,0 +1,21 @@
+{
+  "name": "@fixpdq/workitems-infra",
+  "version": "0.1.0",
+  "scripts": {
+    "deploy:lambda-stack:dev": "export ENVIRONMENT=dev; cp -f config.dev.json config.json && npm run deploy:lambda-stack",
+    "destroy:lambda-stack:dev": "export ENVIRONMENT=dev; cp -f config.dev.json config.json && npm run destroy:lambda-stack",
+    "deploy:lambda-stack": "npx cdk deploy --app bin/lambda-inf.js --output build/lambda.out.$ENVIRONMENT",
+    "destroy:lambda-stack": "npx cdk destroy --app bin/lambda-inf.js --output build/lambda.out.$ENVIRONMENT",
+    "synth:lambda-stack": "npx cdk synth fixpdq-$stackName-stk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.59.0",
+    "aws-cdk": "1.59.0",
+    "jest": "26.4.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-dynamodb": "1.60.0",
+    "@aws-cdk/aws-lambda": "1.59.0",
+    "@aws-cdk/core": "1.59.0"
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "date_created": 1601725915,
+    "date_due": 1601725915,
+    "date_updated": 1601725915,
+    "difficulty": "HIGH",
+    "name": "Work item 1",
+    "ownerid": "3a2dabd5-8c09-496a-b8ad-365df53d32ef",
+    "parentid": "0",
+    "priority": "LOW",
+    "creatorid": "3a2dabd5-8c09-496a-b8ad-365df53d32ef",
+    "workitemid": "8d00e616-3548-4277-9856-08919d68f2fa"
+  }
+]

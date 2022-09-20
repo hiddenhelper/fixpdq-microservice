@@ -1,0 +1,19 @@
+{
+    "action": "assign",
+    "payload": {
+        "actionName": "assign",
+        "topicName": "Action: Assign Work Item",
+        "workItem": "6f619d2f-5c85-4592-afb9-0c05fb0efb83",
+        "messageOwner": "e36e9d09-6354-48c9-9e92-6d61f824c665",
+        "msgRecipient": "6a75f8e9-6e4c-41ad-ab2b-870d13c0ba97",
+        "actionOwner": "6a75f8e9-6e4c-41ad-ab2b-870d13c0ba97",
+        "participants": [
+            {
+                "Username": "6a75f8e9-6e4c-41ad-ab2b-870d13c0ba97"
+            },
+            {
+                "Username": "e36e9d09-6354-48c9-9e92-6d61f824c665"
+            }
+        ]
+    }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "@fixpdq/main",
+  "version": "1.0.0",
+  "description": "FixPDQ main lambda ",
+  "author": "FixPDQ Development Team",
+  "license": "UNLICENSED",
+  "private": "true",
+  "engines": {
+    "node": "~12 <12"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/node": "7.8.7",
+    "@babel/preset-env": "7.9.5",
+    "aws-sam-webpack-plugin": "0.6.0",
+    "babel-loader": "8.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.1.0",
+    "eslint-config-prettier": "6.10.1",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "2.5.0",
+    "jest": "25.3.0",
+    "prettier": "2.1.2",
+    "rimraf": "3.0.2",
+    "semantic-release": "15.13.31",
+    "standard-version": "7.0.1",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.9"
+  },
+  "dependencies": {
+    "@fixpdq/common": "^1.1.1",
+    "aws-sdk": "2.553.0",
+    "axios": "0.20.0",
+    "jwt-decode": "3.0.0",
+    "source-map-support": "0.5.13",
+    "uuid": "8.3.0"
+  },
+  "scripts": {
+    "test": "jest --rootDir ./tests",
+    "clean": "rimraf .aws-sam",
+    "build:lambda:dev": "export NODE_ENV=development; npm run build:lambda",
+    "build:lambda:test": "export NODE_ENV=test; npm run build:lambda",
+    "build:lambda:prod": "export NODE_ENV=production; npm run build:lambda",
+    "build:lambda": "npm run clean && webpack-cli",
+    "build:watch": "webpack-cli -w",
+    "debug:WorkItemsServiceFunction:list:dev": "npm run build:lambda:dev && cp .env.dev .env && sam local invoke WorkItemsServiceFunction --env-vars events/env.dev.json --debug-port 5858 --event events/event-workitem-list.json",
+    "debug:WorkItemsServiceFunction:add:dev": "npm run build:lambda:dev && cp .env.dev .env && sam local invoke WorkItemsServiceFunction --env-vars events/env.dev.json --debug-port 5858 --event events/event-workitem-add.json",
+    "debug:WorkItemsServiceFunction:update:dev": "npm run build:lambda:dev && cp .env.dev .env && sam local invoke WorkItemsServiceFunction --env-vars events/env.dev.json --debug-port 5858 --event events/event-workitem-update.json",
+    "package:lambda": "cd .aws-sam/build && zip -r -D -j WorkItemsServiceFunction.zip WorkItemsServiceFunction/*",
+    "deploy:package:dev": "export $(cat .env.dev | xargs) && npm run build:lambda:dev && npm run package:lambda && npm run deploy:package:workitem-service",
+    "deploy:package:test": "export $(cat .env.test | xargs) && npm run build:lambda:dev && npm run package:lambda && npm run deploy:package:workitem-service",
+    "deploy:package:workitem-service": "aws lambda update-function-code --function-name fixpdq-workitems-$ENVIRONMENT-lda --zip-file fileb://.aws-sam/build/WorkItemsServiceFunction.zip > /dev/null 2>&1"
+  }
+}

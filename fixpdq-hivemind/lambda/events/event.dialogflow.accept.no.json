@@ -1,0 +1,50 @@
+{
+  "responseId": "c8385de2-1654-4912-ac72-445cb658d833-5bc413ca",
+  "queryResult": {
+    "queryText": "no",
+    "action": "workitem-accept.workitem-accept-no",
+    "parameters": {},
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "okay, someone will get in touch with you to explain",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "okay, someone will get in touch with you to explain"
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/fixpdq-hivemind/agent/sessions/f24f5558-7add-f54b-2a7d-15b10a551cc2/contexts/workitem-accept-followup",
+        "lifespanCount": 1
+      },
+      {
+        "name": "projects/fixpdq-hivemind/agent/sessions/f24f5558-7add-f54b-2a7d-15b10a551cc2/contexts/__system_counters__",
+        "parameters": {
+          "no-input": 0,
+          "no-match": 0
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/fixpdq-hivemind/agent/intents/1e709b2f-4b8e-4c79-9a34-cbef7501c08b",
+      "displayName": "workitem-accept - no",
+      "endInteraction": true
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "en",
+    "sentimentAnalysisResult": {
+      "queryTextSentiment": {
+        "score": -0.5,
+        "magnitude": 0.5
+      }
+    }
+  },
+  "originalDetectIntentRequest": {
+    "source": "DIALOGFLOW_CONSOLE",
+    "payload": {}
+  },
+  "session": "projects/fixpdq-hivemind/agent/sessions/f24f5558-7add-f54b-2a7d-15b10a551cc2"
+}

@@ -1,0 +1,695 @@
+{
+	"info": {
+		"_postman_id": "3c643f53-0f34-4e99-8a34-ea8ea818b3bf",
+		"name": "Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sprint 7",
+			"item": [
+				{
+					"name": "146 Create Swarm FE and BE",
+					"item": [
+						{
+							"name": "0+,10,11,12,13,14+- name constraints",
+							"item": [
+								{
+									"name": "0+ Perfect Swarm",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "ae4bfbd6-bac5-4e89-b8fc-c8130d22b63c",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"pmPerfectSwarm\",\r\n    \"owner\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\",\r\n    \"creator\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\"\r\n}",
+											"options": {
+												"raw": {}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/swarms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"swarms"
+											]
+										},
+										"description": "pairs with 14 as well. 14 reuses the name"
+									},
+									"response": []
+								},
+								{
+									"name": "10- long name",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "1f949431-efeb-4cc1-a0cf-7fa9893ba68a",
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"pmSwarmHasMoreThan32CharactersOps\",\r\n    \"owner\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\",\r\n    \"creator\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\"\r\n}",
+											"options": {
+												"raw": {}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/swarms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"swarms"
+											]
+										},
+										"description": "more than 32 characters should not succeed"
+									},
+									"response": []
+								},
+								{
+									"name": "10+ long name",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "6d189c5b-1aba-4abe-8e22-c79ea8cf0240",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"pmSwarmHasExactly32CharactersYay\",\r\n    \"owner\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\",\r\n    \"creator\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\"\r\n}",
+											"options": {
+												"raw": {}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/swarms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"swarms"
+											]
+										},
+										"description": "32 characters not succeed"
+									},
+									"response": []
+								},
+								{
+									"name": "10+ special characters",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "88c0bfed-9e54-4620-86c2-01094cc0511b",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"pmSwarm '-_\",\r\n    \"owner\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\",\r\n    \"creator\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\"\r\n}",
+											"options": {
+												"raw": {}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/swarms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"swarms"
+											]
+										},
+										"description": "more than 32 characters should not succeed"
+									},
+									"response": []
+								},
+								{
+									"name": "11- double spaced swarm",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "21ea3b69-02b8-42e7-96c0-a2cc4dded1f3",
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"pmSwarm  doublespace\",\r\n    \"owner\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\",\r\n    \"creator\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\"\r\n}",
+											"options": {
+												"raw": {}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/swarms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"swarms"
+											]
+										},
+										"description": "double spaces should not succeed"
+									},
+									"response": []
+								},
+								{
+									"name": "12- end in space",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "2ec8cced-e2ee-47fa-b390-aae88e7c298f",
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"pmSwarmEndsinSpace \",\r\n    \"owner\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\",\r\n    \"creator\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\"\r\n}",
+											"options": {
+												"raw": {}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/swarms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"swarms"
+											]
+										},
+										"description": "ending in a space should not succeed"
+									},
+									"response": []
+								},
+								{
+									"name": "13- start with space",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "6449171c-bc59-4703-ac8b-cf0c7a52262f",
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \" pmSwarmStartswithSpace\",\r\n    \"owner\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\",\r\n    \"creator\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\"\r\n}",
+											"options": {
+												"raw": {}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/swarms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"swarms"
+											]
+										},
+										"description": "ending in a space should not succeed"
+									},
+									"response": []
+								},
+								{
+									"name": "14- repeats swarm name",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "78641f3f-e442-4551-b0a0-10a6d850810f",
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"pmPerfectSwarm\",\r\n    \"owner\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\",\r\n    \"creator\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\"\r\n}",
+											"options": {
+												"raw": {}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/swarms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"swarms"
+											]
+										},
+										"description": "ending in a space should not succeed"
+									},
+									"response": []
+								}
+							],
+							"description": "10. Names are 32 characters, Alphabet + spaces + apostrophe (') only + \"-\" or \"_\"\r\n\r\n\r\n11. No double spaces\r\n\r\n\r\n12. No ending in a space\r\n\r\n\r\n13. No starting with a space\r\n\r\n\r\n14. An owner can only one swarm with a particular name at a time\r\n",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "442d2185-01e5-4106-a271-25fac161f85a",
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "3c967d64-08bb-49b0-b4ae-025e9d204434",
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "9+ Swarms are created in DynamoDB Swarms collection",
+							"item": [
+								{
+									"name": "get initial swarms",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "52dda838-aba4-4224-8826-f85cd27dbc1c",
+												"exec": [
+													"const responseJson = pm.response.json();\r",
+													"pm.environment.set(\"count_initial9\", responseJson.count);\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/swarms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"swarms"
+											]
+										},
+										"description": "Swarms are created in DynamoDB Swarms collection\r\n**step 1: get initial Swarms\r\nstep 2: post new swarm \r\nstep 3: get swarms and locate latest swarm for pass"
+									},
+									"response": [
+										{
+											"name": "Details about a user",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/user?id=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"user"
+													],
+													"query": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "x-next",
+													"value": "anim Ut",
+													"description": "A link to the next page of responses"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"id\": 53208278,\n \"name\": \"sed irure id\",\n \"tag\": \"ut Lorem\"\n}"
+										},
+										{
+											"name": "unexpected error",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/user?id=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"user"
+													],
+													"query": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"code\": 47727009,\n \"message\": \"cillum irure elit nisi\"\n}"
+										}
+									]
+								},
+								{
+									"name": "create new swarm",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "e66a9af5-96d9-4c70-922d-7d4aad7b3472",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"pmswarm9plus\",\n    \"owner\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\",\n    \"creator\": \"4ac6d61d-fd82-4195-bc26-d513e4f4ba70\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/swarms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"swarms"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get final swarms",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "c5afad71-5d43-4fc5-99e3-4ec61f4ef02a",
+												"exec": [
+													"\r",
+													"pm.environment.set(\"max\", 10);\r",
+													"pm.test(\"Swarm added to DynamoDB\", () => {\r",
+													"    const responseJson = pm.response.json();\r",
+													"    pm.expect(responseJson.count).to.greaterThan(pm.environment.get(\"count_initial9\"));\r",
+													"    \r",
+													"\r",
+													"});\r",
+													"pm.test(\"less than 10 swarms exist\", () => {\r",
+													"    const responseJson = pm.response.json();\r",
+													"    pm.expect(responseJson.count).to.lessThan(pm.environment.get(\"max\"));\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/swarms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"swarms"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Details about a user",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/user?id=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"user"
+													],
+													"query": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "x-next",
+													"value": "anim Ut",
+													"description": "A link to the next page of responses"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"id\": 53208278,\n \"name\": \"sed irure id\",\n \"tag\": \"ut Lorem\"\n}"
+										},
+										{
+											"name": "unexpected error",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/user?id=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"user"
+													],
+													"query": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"code\": 47727009,\n \"message\": \"cillum irure elit nisi\"\n}"
+										}
+									]
+								}
+							],
+							"description": "tests for creation of swarms in the dynamoDB",
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

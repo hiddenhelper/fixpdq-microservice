@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+
+Globals:
+  Function:
+    Timeout: 10
+    Environment:
+      Variables:
+        ENVIRONMENT: "dev"
+        LOGGING_LEVEL: "debug"
+        LOGGING_DRIVER: "console"
+Resources:
+  WorkItemsServiceFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: workitems-service-lda
+      CodeUri: workitems-service/
+      Handler: app.handler
+      Runtime: nodejs12.x
+      Events:
+        WorkItemsService:
+          Type: Api
+          Properties:
+            Path: /
+            Method: GET

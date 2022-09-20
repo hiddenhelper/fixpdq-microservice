@@ -1,0 +1,11 @@
+{
+  "action": "createAction",
+  "payload": {
+    "actionType": "housekeeping",
+    "name": "remind-workitem-has-status-on-hold",
+    "activeFor": "2c1a85f3-952d-4e38-87d6-277c2e3a6118",
+    "payload": {
+      "workitems": ["7b9e4699-8180-46de-8666-4aaf6024beec"]
+    }
+  }
+}

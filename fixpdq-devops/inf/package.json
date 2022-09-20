@@ -1,0 +1,35 @@
+{
+  "name": "inf",
+  "version": "0.1.0",
+  "bin": {
+    "inf": "bin/inf.js"
+  },
+  "scripts": {
+    "cdk:deploy": "aws-vault exec ${AWS_PROFILE} -- cdk deploy",
+    "cdk:destroy": "aws-vault exec ${AWS_PROFILE} -- cdk destroy",
+    "cdk:synth:inf:sandbox": "cp config.sandbox.json config.js && npm run cdk:deploy:inf",
+    "cdk:deploy:inf:sandbox": "cp config.sandbox.json config.js && npm run cdk:deploy:inf",
+    "cdk:synth:inf": "npx cdk synth --app bin/inf.js --output build/cdk.sandbox.out",
+    "cdk:deploy:inf": "npx cdk deploy --app bin/inf.js --output build/cdk.sandbox.out '*' --require-approval never"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.59.0",
+    "aws-cdk": "1.59.0",
+    "jest": "24.9.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "1.59.0",
+    "@aws-cdk/aws-certificatemanager": "1.59.0",
+    "@aws-cdk/aws-cloudfront": "1.59.0",
+    "@aws-cdk/aws-cloudfront-origins": "1.59.0",
+    "@aws-cdk/aws-cognito": "1.59.0",
+    "@aws-cdk/aws-dynamodb": "1.59.0",
+    "@aws-cdk/aws-ec2": "1.59.0",
+    "@aws-cdk/aws-iam": "1.59.0",
+    "@aws-cdk/aws-lambda": "1.59.0",
+    "@aws-cdk/aws-route53": "1.59.0",
+    "@aws-cdk/aws-route53-targets": "1.59.0",
+    "@aws-cdk/aws-s3": "1.59.0",
+    "@aws-cdk/core": "1.59.0"
+  }
+}

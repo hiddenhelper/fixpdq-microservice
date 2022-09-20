@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const cdk = require('@aws-cdk/core');
+const config = require('../config.json');
+const { ConversationInfStack } = require('../lib/inf-stack');
+const prefix = 'fixpdq';
+
+const app = new cdk.App();
+
+new ConversationInfStack(app, `${prefix}-conversations-stk`, {
+  env: {
+    region: config.AWS_REGION,
+    account: config.AWS_ACCOUNT
+  },
+});

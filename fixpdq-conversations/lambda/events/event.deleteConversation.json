@@ -1,0 +1,107 @@
+{
+  "resource": "/conversations/{conversationid}",
+  "path": "/conversations/CHac999e3c1fb24a70b87442ecc90bfb03",
+  "httpMethod": "DELETE",
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Authorization": "Bearer eyJraWQiOiJGa0VOYVVsaFwvdHA3T0lcL2xxZ1BFT0kwQnY2S1NtK2tzcWRFXC9hQXZsMlJJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxNmIwMzU3Mi1mOTQ2LTRiMTgtOGMzZi0yMmM1OWM2Zjg1Y2YiLCJjb2duaXRvOmdyb3VwcyI6WyJ0ZWFtXzUubWVtYmVyIiwibXl0ZWFtM3VwZGF0ZS5hZG1pbiIsInRlYW1fNy5hZG1pbiJdLCJldmVudF9pZCI6ImM3MDI2ZTYyLTQwM2UtNDdhNC04ZGU4LWE5MGNmMjE0Y2ZkMCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MDc3MjQ4NDYsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMi5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMl9ZbWFyb0c1S08iLCJleHAiOjE2MDc3Mjg0NDYsImlhdCI6MTYwNzcyNDg0NiwianRpIjoiYWJjYzdmNWQtY2QwNi00ZGRlLTkyYTctZmRhYmZhMDM0NTYxIiwiY2xpZW50X2lkIjoiMXBiYmE2MGhwNWRkZzZvbmR1cW5taWN2ZWQiLCJ1c2VybmFtZSI6ImI5NTBjYmQ5LTAyZjktNGVkMi1hNzM0LWIxNTUyODA3Njg2OSJ9.NT8bvjFp7uvYnk1TT4mcn1LBb94jpNucGYGOY3ropon_h0kN7TuCqngP5x5QdCa0-a8V1JtRCx_SgJ5zeCANHWXyt2ssLoiLfyLNneZf7AIBwZGM6MxFFAB4TCV0G-LP_RSatI4H2l6L2xrY2wFwUDJc82kxkwMkDmCA-yag8Vk_JusRjx8LLe4kPhR9jkUv4O5aa-BH8OKSZEWeQes6TNLOmLmhc9gRoOR6Ov9G1u4xF08bva4LzmGEZSBySLuZJNI7IthC8e4WIIYJkGv6mITMVUnajJDQaggD-AvzIaR3Rl-xbV60-ScfzyhZtpW9iJS6KD1i2AKkpbd9VWS8GA",
+    "Cache-Control": "no-cache",
+    "Host": "api.dev.fixpdq.app",
+    "Postman-Token": "a8ffe042-b374-43b7-9dcc-2c75c0a3fbe9",
+    "User-Agent": "PostmanRuntime/7.26.5",
+    "X-Amzn-Trace-Id": "Root=1-5f61b728-c21a412cc101f204290fce78",
+    "X-Forwarded-For": "111.22.333.44",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "*/*"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Authorization": [
+      "Bearer eyJraWQiOiJGa0VOYVVsaFwvdHA3T0lcL2xxZ1BFT0kwQnY2S1NtK2tzcWRFXC9hQXZsMlJJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxNmIwMzU3Mi1mOTQ2LTRiMTgtOGMzZi0yMmM1OWM2Zjg1Y2YiLCJjb2duaXRvOmdyb3VwcyI6WyJ0ZWFtXzUubWVtYmVyIiwibXl0ZWFtM3VwZGF0ZS5hZG1pbiIsInRlYW1fNy5hZG1pbiJdLCJldmVudF9pZCI6ImM3MDI2ZTYyLTQwM2UtNDdhNC04ZGU4LWE5MGNmMjE0Y2ZkMCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MDc3MjQ4NDYsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMi5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMl9ZbWFyb0c1S08iLCJleHAiOjE2MDc3Mjg0NDYsImlhdCI6MTYwNzcyNDg0NiwianRpIjoiYWJjYzdmNWQtY2QwNi00ZGRlLTkyYTctZmRhYmZhMDM0NTYxIiwiY2xpZW50X2lkIjoiMXBiYmE2MGhwNWRkZzZvbmR1cW5taWN2ZWQiLCJ1c2VybmFtZSI6ImI5NTBjYmQ5LTAyZjktNGVkMi1hNzM0LWIxNTUyODA3Njg2OSJ9.NT8bvjFp7uvYnk1TT4mcn1LBb94jpNucGYGOY3ropon_h0kN7TuCqngP5x5QdCa0-a8V1JtRCx_SgJ5zeCANHWXyt2ssLoiLfyLNneZf7AIBwZGM6MxFFAB4TCV0G-LP_RSatI4H2l6L2xrY2wFwUDJc82kxkwMkDmCA-yag8Vk_JusRjx8LLe4kPhR9jkUv4O5aa-BH8OKSZEWeQes6TNLOmLmhc9gRoOR6Ov9G1u4xF08bva4LzmGEZSBySLuZJNI7IthC8e4WIIYJkGv6mITMVUnajJDQaggD-AvzIaR3Rl-xbV60-ScfzyhZtpW9iJS6KD1i2AKkpbd9VWS8GA"
+    ],
+    "Cache-Control": [
+      "no-cache"
+    ],
+    "Host": [
+      "api.dev.fixpdq.app"
+    ],
+    "Postman-Token": [
+      "a8ffe042-b374-43b7-9dcc-2c75c0a3fbe9"
+    ],
+    "User-Agent": [
+      "PostmanRuntime/7.26.5"
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-5f61b728-c21a412cc101f204290fce78"
+    ],
+    "X-Forwarded-For": [
+      "111.22.333.44"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": {
+    "conversationid": "CHac999e3c1fb24a70b87442ecc90bfb03"
+  },
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "1pfrj9",
+    "authorizer": {
+      "claims": {
+        "sub": "bc28eb05-9fde-4579-8f91-a1d8480fd1b9",
+        "event_id": "6d74be65-c3ea-412c-8573-6cff5fb33a38",
+        "token_use": "access",
+        "scope": "aws.cognito.signin.user.admin",
+        "auth_time": "1600239043",
+        "iss": "https://cognito-idp.ap-southeast-2.amazonaws.com/ap-southeast-2_tbVMW2fRC",
+        "exp": "Wed Sep 16 07:50:43 UTC 2020",
+        "iat": "Wed Sep 16 06:50:43 UTC 2020",
+        "version": "2",
+        "jti": "a71965f2-7faa-423a-9f08-be5bbee25c1d",
+        "client_id": "c1ldncccotl5t38v6vmgqh5kn",
+        "username": "bc28eb05-9fde-4579-8f91-a1d8480fd1b9"
+      }
+    },
+    "resourcePath": "/conversations/{conversationid}",
+    "httpMethod": "DELETE",
+    "extendedRequestId": "S8mOSEmYywMFlcQ=",
+    "requestTime": "16/Sep/2020:06:56:40 +0000",
+    "path": "/conversations/",
+    "accountId": "538222035340",
+    "protocol": "HTTP/1.1",
+    "stage": "prod",
+    "domainPrefix": "api",
+    "requestTimeEpoch": 1600239400182,
+    "requestId": "b4cd1209-f650-4c51-97fa-fd15987a9596",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "111.22.333.44",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "PostmanRuntime/7.26.5",
+      "user": null
+    },
+    "domainName": "api.dev.fixpdq.app",
+    "apiId": "n7ih83okac"
+  },
+  "body": null,
+  "isBase64Encoded": false
+}

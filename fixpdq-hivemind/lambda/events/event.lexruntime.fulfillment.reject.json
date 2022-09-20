@@ -1,0 +1,54 @@
+{
+  "messageVersion": "1.0",
+  "invocationSource": "FulfillmentCodeHook",
+  "userId": "e36e9d09-6354-48c9-9e92-6d61f824c665",
+  "sessionAttributes": {},
+  "requestAttributes": {
+    "conversationId": "CH44a89c8955db424ebb080ffa4fd27e1c",
+    "workItemId": "9c5b6c24-0741-452e-b5ad-70768c2c3c0c",
+    "userId": "e36e9d09-6354-48c9-9e92-6d61f824c665"
+  },
+  "bot": {
+    "name": "fixpdq_hivemind_workitems_dev",
+    "alias": "dev",
+    "version": "2"
+  },
+  "outputDialogMode": "Text",
+  "currentIntent": {
+    "name": "fixpdq_workitems_reject",
+    "slots": {},
+    "slotDetails": {},
+    "confirmationStatus": "None",
+    "nluIntentConfidenceScore": 1
+  },
+  "alternativeIntents": [
+    {
+      "name": "AMAZON.FallbackIntent",
+      "slots": {},
+      "slotDetails": {},
+      "confirmationStatus": "None",
+      "nluIntentConfidenceScore": null
+    },
+    {
+      "name": "fixpdq_workitems_approve",
+      "slots": {},
+      "slotDetails": {},
+      "confirmationStatus": "None",
+      "nluIntentConfidenceScore": 0.37
+    },
+    {
+      "name": "fixpdq_workitems_review",
+      "slots": {},
+      "slotDetails": {},
+      "confirmationStatus": "None",
+      "nluIntentConfidenceScore": 0.26
+    }
+  ],
+  "inputTranscript": "reject this",
+  "recentIntentSummaryView": null,
+  "sentimentResponse": {
+    "sentimentLabel": "NEGATIVE",
+    "sentimentScore": "{Positive: 0.008692197,Negative: 0.7715816,Neutral: 0.056727245,Mixed: 0.16299902}"
+  },
+  "kendraResponse": null
+}

@@ -1,0 +1,22 @@
+{
+  "version": "1",
+  "region": "ap-southeast-2",
+  "userPoolId": "ap-southeast-2_d1UWC3Gxx",
+  "userName": "4d69c68f-51f4-47e4-b6a6-50de9664cf03",
+  "callerContext": {
+    "awsSdkVersion": "aws-sdk-unknown-unknown",
+    "clientId": "5gvbag9ul67v1mk3k48b1qh9mg"
+  },
+  "triggerSource": "PreSignUp_SignUp",
+  "request": {
+    "userAttributes": {
+      "email": "ciniy98793@tinkmail.net"
+    },
+    "validationData": null
+  },
+  "response": {
+    "autoConfirmUser": false,
+    "autoVerifyEmail": false,
+    "autoVerifyPhone": false
+  }
+}

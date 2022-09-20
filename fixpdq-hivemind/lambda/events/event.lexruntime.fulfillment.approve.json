@@ -1,0 +1,43 @@
+{
+  "messageVersion": "1.0",
+  "invocationSource": "FulfillmentCodeHook",
+  "userId": "awvqrvfbvrxoahyy5mxq9bfq2zwco87t",
+  "sessionAttributes": {},
+  "requestAttributes": null,
+  "bot": {
+    "name": "fixpdq_hivemind_workitems_dev",
+    "alias": "$LATEST",
+    "version": "$LATEST"
+  },
+  "outputDialogMode": "Text",
+  "currentIntent": {
+    "name": "fixpdq_workitems_approve",
+    "slots": {},
+    "slotDetails": {},
+    "confirmationStatus": "None",
+    "nluIntentConfidenceScore": 1
+  },
+  "alternativeIntents": [
+    {
+      "name": "AMAZON.FallbackIntent",
+      "slots": {},
+      "slotDetails": {},
+      "confirmationStatus": "None",
+      "nluIntentConfidenceScore": null
+    },
+    {
+      "name": "fixpdq_workitems_review",
+      "slots": {},
+      "slotDetails": {},
+      "confirmationStatus": "None",
+      "nluIntentConfidenceScore": 0.45
+    }
+  ],
+  "inputTranscript": "approve workitem",
+  "recentIntentSummaryView": null,
+  "sentimentResponse": {
+    "sentimentLabel": "NEUTRAL",
+    "sentimentScore": "{Positive: 0.17547502,Negative: 0.045984313,Neutral: 0.7737068,Mixed: 0.0048338575}"
+  },
+  "kendraResponse": null
+}

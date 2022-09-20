@@ -1,0 +1,19 @@
+{
+  "action": "assign",
+  "payload": {
+      "channelId": "CHd602b0ef5c9842b09c1e57145b623eb5",
+      "conversationid": "6c63a6a7-c784-4ff9-813b-5c42757c9fcc",
+      "body": "Do you understand this work item, and what you have been asked to deliver?",
+      "workItem": "7066c952-55c7-48ce-bb6a-7dc0aa331629",
+      "topicName": "assign",
+      "actionOwner": "054fd5b7-4d1a-4615-afe4-acf5f1cc7e98",
+      "messageOwner": "054fd5b7-4d1a-4615-afe4-acf5f1cc7e98",
+      "msgRecipient": "52941457-80a9-498d-b171-c47b8aed86e7",
+      "hivemindUser": "f23139dc-bc36-476d-b38e-f82c51ebb2d7",
+      "actionName": "assign",
+      "participants": [],
+      "hivemind": {
+          "allowHivemindProcessing": true
+      }
+  }
+}

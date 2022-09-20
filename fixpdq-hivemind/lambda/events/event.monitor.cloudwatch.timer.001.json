@@ -1,0 +1,13 @@
+{
+  "version": "0",
+  "id": "3a7f0d73-13ba-da88-929c-62308c9c9b5a",
+  "detail-type": "Scheduled Event",
+  "source": "aws.events",
+  "account": "538222035340",
+  "time": "2021-05-13T19:32:05Z",
+  "region": "ap-southeast-2",
+  "resources": [
+    "arn:aws:events:ap-southeast-2:538222035340:rule/fixpdq-hivemindmonitor-dev-trigger"
+  ],
+  "detail": {}
+}

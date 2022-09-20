@@ -1,0 +1,133 @@
+{
+  "resource": "/conversations",
+  "path": "/conversations",
+  "httpMethod": "POST",
+  "headers": {
+      "accept": "application/json",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,ru;q=0.7",
+      "Authorization": "Bearer eyJraWQiOiJGa0VOYVVsaFwvdHA3T0lcL2xxZ1BFT0kwQnY2S1NtK2tzcWRFXC9hQXZsMlJJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxODYyYWU2Mi1kMjQwLTQwNjAtODFjYi1hY2NhMTBmOGFhZGUiLCJjb2duaXRvOmdyb3VwcyI6WyIxYTEwYjgyMS1hNzZiLTRhMDQtYThhYi0zZGNkMTMzN2ZjNTkubWVtYmVyIiwiZmMyMTIzZTctM2E4ZC00OTM5LWI5ZjMtMTcwMGNjMTQ1MWVkLm1lbWJlciIsIjY5OWIxM2I0LTc5NDAtNDk0YS04NjQ3LTkwZGE1ZmJkNDIzOS5tZW1iZXIiLCI1NmZkOGJmNC1jNDRlLTRjZDItYjY1Ny03OTgzNDQ5NmJiODYubWVtYmVyIiwiNjZlOTE5NWMtNTYwZi00NWJmLWI2Y2ItNGE4MzU0MDIwMTA2Lm1lbWJlciIsIjFhZTE1MTU2LTNmMDItNGQ2NC1hYzM4LTc0MGNiYTFmMGVjNi5hZG1pbiIsIjM3MzJmN2Y1LTFhYTMtNGIwMy1hNDMyLTRhZjliMWE2OTI3NS5hZG1pbiJdLCJldmVudF9pZCI6Ijg5MDA5ZTViLWViMTctNGQwNS1iN2UwLTcyNzkxMTNiMGZkOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2Mjc0NjAyMTksImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMi5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMl9ZbWFyb0c1S08iLCJleHAiOjE2Mjc0NzE2NDYsImlhdCI6MTYyNzQ2ODA0NiwianRpIjoiZWYyMjYyYzItN2I2ZS00MTc3LWFlMGItZDYxZWU0MmU3MTFjIiwiY2xpZW50X2lkIjoiMXBiYmE2MGhwNWRkZzZvbmR1cW5taWN2ZWQiLCJ1c2VybmFtZSI6IjA1NGZkNWI3LTRkMWEtNDYxNS1hZmU0LWFjZjVmMWNjN2U5OCJ9.P_G0zDsyM18FamzeWVTKbGWVIu_pEejKf3qq0UjMQ_yDCEHxQN-sdBfeHlt9HvAaATBn5Z3jJVow9D1ggx6N27yho5FLNYbvdPZYtK-d_TCle2yFJZyD4usonrLRY0E-2w4GZYlopJaumSOR2kvE6unikDl5F0FghyA9luY31BQIDHXYDGmuUCrzOn7rNiXB4EyvkLZwiCCR_8rma7f0_ipopNW7yDkYYQJtJNOHDPlrEAIME-rbxrm63alFyd2wrrw5j13QhRPWzQ3CsJNUJ3s_Ezi0xMyKPA5r8J2jvNssdC-En3nT4cJur4M3nZR6YqWrIX9WP-pn_7UawaqNhw",
+      "content-type": "application/json; charset=UTF-8",
+      "Host": "api.dev.fixpdq.app",
+      "origin": "http://localhost:3000",
+      "referer": "http://localhost:3000/",
+      "sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "cross-site",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+      "X-Amzn-Trace-Id": "Root=1-61013b8f-7acd508567b2ce9d2418b98f",
+      "X-Forwarded-For": "219.76.25.116",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+      "accept": [
+          "application/json"
+      ],
+      "accept-encoding": [
+          "gzip, deflate, br"
+      ],
+      "accept-language": [
+          "en-GB,en-US;q=0.9,en;q=0.8,ru;q=0.7"
+      ],
+      "Authorization": [
+          "Bearer eyJraWQiOiJGa0VOYVVsaFwvdHA3T0lcL2xxZ1BFT0kwQnY2S1NtK2tzcWRFXC9hQXZsMlJJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxODYyYWU2Mi1kMjQwLTQwNjAtODFjYi1hY2NhMTBmOGFhZGUiLCJjb2duaXRvOmdyb3VwcyI6WyIxYTEwYjgyMS1hNzZiLTRhMDQtYThhYi0zZGNkMTMzN2ZjNTkubWVtYmVyIiwiZmMyMTIzZTctM2E4ZC00OTM5LWI5ZjMtMTcwMGNjMTQ1MWVkLm1lbWJlciIsIjY5OWIxM2I0LTc5NDAtNDk0YS04NjQ3LTkwZGE1ZmJkNDIzOS5tZW1iZXIiLCI1NmZkOGJmNC1jNDRlLTRjZDItYjY1Ny03OTgzNDQ5NmJiODYubWVtYmVyIiwiNjZlOTE5NWMtNTYwZi00NWJmLWI2Y2ItNGE4MzU0MDIwMTA2Lm1lbWJlciIsIjFhZTE1MTU2LTNmMDItNGQ2NC1hYzM4LTc0MGNiYTFmMGVjNi5hZG1pbiIsIjM3MzJmN2Y1LTFhYTMtNGIwMy1hNDMyLTRhZjliMWE2OTI3NS5hZG1pbiJdLCJldmVudF9pZCI6Ijg5MDA5ZTViLWViMTctNGQwNS1iN2UwLTcyNzkxMTNiMGZkOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2Mjc0NjAyMTksImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMi5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMl9ZbWFyb0c1S08iLCJleHAiOjE2Mjc0NzE2NDYsImlhdCI6MTYyNzQ2ODA0NiwianRpIjoiZWYyMjYyYzItN2I2ZS00MTc3LWFlMGItZDYxZWU0MmU3MTFjIiwiY2xpZW50X2lkIjoiMXBiYmE2MGhwNWRkZzZvbmR1cW5taWN2ZWQiLCJ1c2VybmFtZSI6IjA1NGZkNWI3LTRkMWEtNDYxNS1hZmU0LWFjZjVmMWNjN2U5OCJ9.P_G0zDsyM18FamzeWVTKbGWVIu_pEejKf3qq0UjMQ_yDCEHxQN-sdBfeHlt9HvAaATBn5Z3jJVow9D1ggx6N27yho5FLNYbvdPZYtK-d_TCle2yFJZyD4usonrLRY0E-2w4GZYlopJaumSOR2kvE6unikDl5F0FghyA9luY31BQIDHXYDGmuUCrzOn7rNiXB4EyvkLZwiCCR_8rma7f0_ipopNW7yDkYYQJtJNOHDPlrEAIME-rbxrm63alFyd2wrrw5j13QhRPWzQ3CsJNUJ3s_Ezi0xMyKPA5r8J2jvNssdC-En3nT4cJur4M3nZR6YqWrIX9WP-pn_7UawaqNhw"
+      ],
+      "content-type": [
+          "application/json; charset=UTF-8"
+      ],
+      "Host": [
+          "api.dev.fixpdq.app"
+      ],
+      "origin": [
+          "http://localhost:3000"
+      ],
+      "referer": [
+          "http://localhost:3000/"
+      ],
+      "sec-ch-ua": [
+          "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\""
+      ],
+      "sec-ch-ua-mobile": [
+          "?0"
+      ],
+      "sec-fetch-dest": [
+          "empty"
+      ],
+      "sec-fetch-mode": [
+          "cors"
+      ],
+      "sec-fetch-site": [
+          "cross-site"
+      ],
+      "User-Agent": [
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36"
+      ],
+      "X-Amzn-Trace-Id": [
+          "Root=1-61013b8f-7acd508567b2ce9d2418b98f"
+      ],
+      "X-Forwarded-For": [
+          "219.76.25.116"
+      ],
+      "X-Forwarded-Port": [
+          "443"
+      ],
+      "X-Forwarded-Proto": [
+          "https"
+      ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+      "resourceId": "vsg3sl",
+      "authorizer": {
+          "claims": {
+              "sub": "1862ae62-d240-4060-81cb-acca10f8aade",
+              "cognito:groups": "1a10b821-a76b-4a04-a8ab-3dcd1337fc59.member,fc2123e7-3a8d-4939-b9f3-1700cc1451ed.member,699b13b4-7940-494a-8647-90da5fbd4239.member,56fd8bf4-c44e-4cd2-b657-79834496bb86.member,66e9195c-560f-45bf-b6cb-4a8354020106.member,1ae15156-3f02-4d64-ac38-740cba1f0ec6.admin,3732f7f5-1aa3-4b03-a432-4af9b1a69275.admin",
+              "event_id": "89009e5b-eb17-4d05-b7e0-7279113b0fd8",
+              "token_use": "access",
+              "scope": "aws.cognito.signin.user.admin",
+              "auth_time": "1627460219",
+              "iss": "https://cognito-idp.ap-southeast-2.amazonaws.com/ap-southeast-2_YmaroG5KO",
+              "exp": "Wed Jul 28 11:27:26 UTC 2021",
+              "iat": "Wed Jul 28 10:27:26 UTC 2021",
+              "jti": "ef2262c2-7b6e-4177-ae0b-d61ee42e711c",
+              "client_id": "1pbba60hp5ddg6onduqnmicved",
+              "username": "054fd5b7-4d1a-4615-afe4-acf5f1cc7e98"
+          }
+      },
+      "resourcePath": "/conversations",
+      "httpMethod": "POST",
+      "extendedRequestId": "DLY-YFHFywMFZDw=",
+      "requestTime": "28/Jul/2021:11:12:15 +0000",
+      "path": "/conversations",
+      "accountId": "538222035340",
+      "protocol": "HTTP/1.1",
+      "stage": "prod",
+      "domainPrefix": "api",
+      "requestTimeEpoch": 1627470735079,
+      "requestId": "c6a66d58-1101-4a98-b28d-284304f46d19",
+      "identity": {
+          "cognitoIdentityPoolId": null,
+          "accountId": null,
+          "cognitoIdentityId": null,
+          "caller": null,
+          "sourceIp": "219.76.25.116",
+          "principalOrgId": null,
+          "accessKey": null,
+          "cognitoAuthenticationType": null,
+          "cognitoAuthenticationProvider": null,
+          "userArn": null,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+          "user": null
+      },
+      "domainName": "api.dev.fixpdq.app",
+      "apiId": "n7ih83okac"
+  },
+  "body": "{\"channelId\":\"CH323224e03120424a90e07d014a2f98c2\",\"conversationid\":\"15d01951-71df-4a32-9b8f-8e48b6160a46\",\"workitemid\":\"8da2ed1d-0db1-43e8-8359-88413973ce33\",\"topicName\":\"/fix create workitem...\",\"swarmId\":\"cb269d3d-0839-4222-b00b-8281ec34acae\",\"lastChild\":\"0\",\"participants\":[],\"twilioMessage\":{\"author\":\"054fd5b7-4d1a-4615-afe4-acf5f1cc7e98\",\"body\":\"/fix create workitem DD\",\"attributes\":{\"recipient\":\"\",\"conversationid\":\"15d01951-71df-4a32-9b8f-8e48b6160a46\",\"workitemid\":\"8da2ed1d-0db1-43e8-8359-88413973ce33\",\"topicName\":\"/fix create workitem...\"},\"dateUpdated\":\"2021-07-28T11:12:14.464Z\",\"dateCreated\":\"2021-07-28T11:12:14.464Z\",\"conversationSid\":\"CH323224e03120424a90e07d014a2f98c2\",\"sid\":\"IMbf766c376c924802a56221df8dc3d7d6\"}}",
+  "isBase64Encoded": false
+}

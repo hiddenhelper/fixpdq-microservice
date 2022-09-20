@@ -1,0 +1,42 @@
+{
+  "messageVersion": "1.0",
+  "invocationSource": "FulfillmentCodeHook",
+  "userId": "e36e9d09-6354-48c9-9e92-6d61f824c665",
+  "sessionAttributes": {},
+  "requestAttributes": {
+    "conversationId": "CHa2d7cc70b8f74f4fb0b6b3956920936f",
+    "userId": "e36e9d09-6354-48c9-9e92-6d61f824c665"
+  },
+  "bot": { "name": "fixpdq_hivemind_workitems_dev", "alias": "dev", "version": "7" },
+  "outputDialogMode": "Text",
+  "currentIntent": {
+    "name": "ReviewWorkitem",
+    "slots": { "workitemid": "abcd1234" },
+    "slotDetails": { "workitemid": "abcd1234" },
+    "confirmationStatus": "None",
+    "nluIntentConfidenceScore": 1
+  },
+  "alternativeIntents": [
+    {
+      "name": "ApproveWorkItem",
+      "slots": "",
+      "slotDetails": "",
+      "confirmationStatus": "None",
+      "nluIntentConfidenceScore": 0.46
+    },
+    {
+      "name": "AMAZON.FallbackIntent",
+      "slots": {},
+      "slotDetails": {},
+      "confirmationStatus": "None",
+      "nluIntentConfidenceScore": null
+    }
+  ],
+  "inputTranscript": "review abcd1234",
+  "recentIntentSummaryView": null,
+  "sentimentResponse": {
+    "sentimentLabel": "NEUTRAL",
+    "sentimentScore": "{Positive: 0.007152969,Negative: 0.010103266,Neutral: 0.9546324,Mixed: 0.028111324}"
+  },
+  "kendraResponse": null
+}

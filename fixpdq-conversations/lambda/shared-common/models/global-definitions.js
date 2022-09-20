@@ -1,0 +1,2 @@
+export const TWILIO_PARALLELISM = 10;
+export const DYNAMODB_PARALLELISM = 5;

@@ -1,0 +1,84 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+
+
+Globals:
+  Function:
+    Timeout: 180
+    Environment:
+      Variables:
+        ENVIRONMENT: "dev"
+        HIVEMIND_LOGGING_LEVEL: "debug"
+        HIVEMIND_LOGGING_DRIVER: "console"
+        HIVEMIND_DB_DYNAMODB: ""
+        HIVEMIND_USER_ID: "f23139dc-bc36-476d-b38e-f82c51ebb2d7"
+        BOT_NAME: "fixpdq_hivemind_workitems_dev"
+        BOT_ALIAS: "dev"
+        TWILIO_ACCOUNT_SID: "ACd74a362180af1e54e63db8cce61ccb67"
+        TWILIO_AUTH_TOKEN: "91c1cb2790e0123ca55d360073682499"
+        TWILIO_API_KEY: "SK179ebfec82b5d2daccec5ba91a227cd9"
+        TWILIO_API_SECRET: "QmM6iMKScQp54p4Akg251JAoHzs2Vsm2"
+        TWILIO_SERVICE_SID: "IS59bb9ba1e0bc4311a439be1e2190f511"
+        GOOGLE_APPLICATION_CREDENTIALS: "gcpcredentials.json"
+        RULES_RUNNER_PARALLELISM: 4
+        RULE_PARALLELISM: 4
+        ACC_CONTRACT_NUM_DAYS_OPEN: disabled
+        WORKITEM_NUM_DAYS_BEFORE_DUE: disabled
+        REMIND_WORKITEM_HAS_STATUS_NEW: disabled
+        REMIND_WORKITEM_HAS_STATUS_ON_HOLD: disabled
+        REMIND_WORKITEM_DUE_TODAY: enabled
+        REMIND_WORKITEM_UNASSIGNED: enabled
+Resources:
+  HivemindServiceFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: hivemind-service-lda
+      CodeUri: hivemind-service/
+      Handler: app.handler
+      Runtime: nodejs12.x
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+  HivemindFulfilmentServiceFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: hivemindfulfilment-service-lda
+      CodeUri: hivemindfulfilment-service/
+      Handler: app.handler
+      Runtime: nodejs12.x
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+  HivemindMonitorServiceFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: hivemindmonitor-service-lda
+      CodeUri: hivemind-monitor-service/
+      Handler: app.handler
+      Runtime: nodejs12.x
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+  HivemindConversationServiceFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: hivemindconversation-service-lda
+      CodeUri: hivemind-conversation-service/
+      Handler: app.handler
+      Runtime: nodejs12.x
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
